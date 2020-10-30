@@ -1,7 +1,10 @@
 ---
 title: "Hello Friend"
 path: "/hello"
-coverImage: "../images/hello.jpg"
+coverImage: "../../images/hello.jpg"
+githublink: "https://example.com"
+modellink: "https://example.com"
+attributionlink: "https://example.com"
 excerpt: '"Hello, friend?" That''s lame. Maybe I should give you a name...'
 tags: ["rob____ot", "hello friend"]
 ---

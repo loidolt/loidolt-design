@@ -8,7 +8,16 @@ import Post from "../components/post";
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const {
-    frontmatter: { title, path, coverImage, excerpt, tags },
+    frontmatter: {
+      title,
+      path,
+      coverImage,
+      excerpt,
+      tags,
+      githublink,
+      modellink,
+      attributionlink,
+    },
     excerpt: autoExcerpt,
     id,
     html,
@@ -25,6 +34,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         coverImage={coverImage}
         html={html}
         tags={tags}
+        githublink={githublink}
+        modellink={modellink}
+        attributionlink={attributionlink}
         previousPost={previous}
         nextPost={next}
       />
@@ -50,6 +62,9 @@ export const pageQuery = graphql`
         path
         excerpt
         tags
+        githublink
+        modellink
+        attributionlink
         coverImage {
           childImageSharp {
             fluid(maxWidth: 800) {

@@ -35,9 +35,7 @@ const Tags = ({
             <Post
               key={id}
               title={title}
-              date={date}
               path={path}
-              author={author}
               tags={tags}
               coverImage={coverImage}
               excerpt={excerpt || autoExcerpt}
@@ -78,9 +76,7 @@ export const postsQuery = graphql`
           excerpt
           frontmatter {
             title
-            date(formatString: "DD MMMM YYYY")
             path
-            author
             excerpt
             tags
             coverImage {
