@@ -19,13 +19,14 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
           const {
             id,
             excerpt: autoExcerpt,
-            frontmatter: { title, path, coverImage, excerpt, tags },
+            frontmatter: { title, path, date, coverImage, excerpt, tags },
           } = node;
 
           return (
             <Post
               key={id}
               title={title}
+              date={date}
               path={path}
               coverImage={coverImage}
               tags={tags}
@@ -67,6 +68,7 @@ export const postsQuery = graphql`
           excerpt
           frontmatter {
             title
+            date(formatString: "DD MMMM YYYY")
             path
             excerpt
             tags

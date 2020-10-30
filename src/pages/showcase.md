@@ -1,5 +1,6 @@
 ---
 title: "Showcase"
+date: "2020-10-30"
 path: "/showcase"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Websites"
+date: "2020-10-30"
 path: "/websites"
-excerpt: "Collection of current web design projects."
 ---
 
 ## Classic Homes

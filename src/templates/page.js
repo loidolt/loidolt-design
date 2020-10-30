@@ -10,6 +10,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   const {
     frontmatter: {
       title,
+      date,
       path,
       coverImage,
       excerpt,
@@ -30,6 +31,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       <Post
         key={id}
         title={title}
+        date={date}
         path={path}
         coverImage={coverImage}
         html={html}
@@ -59,13 +61,15 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         title
+        date(formatString: "DD MMMM YYYY")
         path
         excerpt
         tags
-        githublink
+        repolink
         modellink
         attributionlink
         coverImage {
+          publicURL
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid

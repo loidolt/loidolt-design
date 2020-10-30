@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+import Gallery from "react-photo-gallery";
 import Navigation from "./navigation";
 import { toKebabCase } from "../helpers";
 
@@ -9,11 +10,12 @@ import style from "../styles/post.module.css";
 
 const Post = ({
   title,
+  date,
   path,
   coverImage,
   excerpt,
   tags,
-  githublink,
+  repolink,
   modellink,
   attributionlink,
   html,
@@ -25,6 +27,24 @@ const Post = ({
   const nextPath = nextPost && nextPost.frontmatter.path;
   const nextLabel = nextPost && nextPost.frontmatter.title;
 
+  const photos = [
+    {
+      src: coverImage.publicURL,
+      width: 16,
+      height: 9,
+    },
+    {
+      src: coverImage.publicURL,
+      width: 16,
+      height: 9,
+    },
+    {
+      src: coverImage.publicURL,
+      width: 16,
+      height: 9,
+    },
+  ];
+
   return (
     <div className={style.post}>
       <div className={style.postContent}>
@@ -32,6 +52,7 @@ const Post = ({
           {excerpt ? <Link to={path}>{title}</Link> : title}
         </h1>
         <div className={style.meta}>
+          {date}
           {tags ? (
             <div className={style.tags}>
               {tags.map(tag => (
@@ -50,18 +71,18 @@ const Post = ({
           />
         )}
 
-        {githublink && (
-          <form action={githublink} target="_blank">
-            <input type="submit" value="GitHub Repo" />
+        {repolink && (
+          <form action={repolink} target="_blank">
+            <input type="submit" value="Repository" />
           </form>
         )}
         {modellink && (
-          <form action={githublink} target="_blank">
+          <form action={modellink} target="_blank">
             <input type="submit" value="3D Model" />
           </form>
         )}
         {attributionlink && (
-          <form action={githublink} target="_blank">
+          <form action={attributionlink} target="_blank">
             <input type="submit" value="Attribution" />
           </form>
         )}
@@ -76,6 +97,8 @@ const Post = ({
         ) : (
           <>
             <div dangerouslySetInnerHTML={{ __html: html }} />
+            {photos && <Gallery photos={photos} />}
+
             <Navigation
               previousPath={previousPath}
               previousLabel={previousLabel}
@@ -94,11 +117,10 @@ Post.propTypes = {
   date: PropTypes.string,
   path: PropTypes.string,
   coverImage: PropTypes.object,
-  author: PropTypes.string,
   excerpt: PropTypes.string,
   html: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string),
-  githublink: PropTypes.string,
+  repolink: PropTypes.string,
   modellink: PropTypes.string,
   attributionlink: PropTypes.string,
   previousPost: PropTypes.object,
