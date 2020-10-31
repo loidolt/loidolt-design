@@ -2,6 +2,7 @@
 title: "3D Printed Floor Plans"
 date: "2018-11-04"
 path: "/3d-printed-floor-plans"
+directory: "3d-printed-floor-plans"
 coverImage: "3dPrintedFloorPlanModels.jpg"
 repolink: ""
 modellink: ""

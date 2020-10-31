@@ -15,7 +15,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       coverImage,
       excerpt,
       tags,
-      githublink,
+      repolink,
       modellink,
       attributionlink,
     },
@@ -23,6 +23,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
     id,
     html,
   } = data.markdownRemark;
+  const photos = data.allFile.edges;
   const { next, previous } = pageContext;
 
   return (
@@ -36,9 +37,10 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         coverImage={coverImage}
         html={html}
         tags={tags}
-        githublink={githublink}
+        repolink={repolink}
         modellink={modellink}
         attributionlink={attributionlink}
+        photos={photos}
         previousPost={previous}
         nextPost={next}
       />
@@ -57,12 +59,13 @@ BlogPostTemplate.propTypes = {
 };
 
 export const pageQuery = graphql`
-  query($path: String) {
+  query($path: String, $directory: String) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         title
         date(formatString: "DD MMMM YYYY")
         path
+        directory
         excerpt
         tags
         repolink
@@ -80,6 +83,24 @@ export const pageQuery = graphql`
       id
       html
       excerpt
+    }
+    allFile(
+      filter: {
+        extension: { regex: "/(jpg)/" }
+        relativeDirectory: { eq: $directory }
+      }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          base
+          publicURL
+        }
+      }
     }
   }
 `;

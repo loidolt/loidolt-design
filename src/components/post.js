@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
-import Gallery from "react-photo-gallery";
 import Navigation from "./navigation";
 import { toKebabCase } from "../helpers";
 
@@ -19,6 +18,7 @@ const Post = ({
   modellink,
   attributionlink,
   html,
+  photos,
   previousPost,
   nextPost,
 }) => {
@@ -27,23 +27,7 @@ const Post = ({
   const nextPath = nextPost && nextPost.frontmatter.path;
   const nextLabel = nextPost && nextPost.frontmatter.title;
 
-  const photos = [
-    {
-      src: coverImage.publicURL,
-      width: 16,
-      height: 9,
-    },
-    {
-      src: coverImage.publicURL,
-      width: 16,
-      height: 9,
-    },
-    {
-      src: coverImage.publicURL,
-      width: 16,
-      height: 9,
-    },
-  ];
+  console.log(photos);
 
   return (
     <div className={style.post}>
@@ -71,21 +55,31 @@ const Post = ({
           />
         )}
 
-        {repolink && (
-          <form action={repolink} target="_blank">
-            <input type="submit" value="Repository" />
-          </form>
-        )}
-        {modellink && (
-          <form action={modellink} target="_blank">
-            <input type="submit" value="3D Model" />
-          </form>
-        )}
-        {attributionlink && (
-          <form action={attributionlink} target="_blank">
-            <input type="submit" value="Attribution" />
-          </form>
-        )}
+        <div className={style.buttonArea}>
+          {repolink && (
+            <form action={repolink} target="_blank">
+              <input
+                type="submit"
+                className={style.button}
+                value="Repository"
+              />
+            </form>
+          )}
+          {modellink && (
+            <form action={modellink} target="_blank">
+              <input type="submit" className={style.button} value="3D Model" />
+            </form>
+          )}
+          {attributionlink && (
+            <form action={attributionlink} target="_blank">
+              <input
+                type="submit"
+                className={style.button}
+                value="Attribution"
+              />
+            </form>
+          )}
+        </div>
 
         {excerpt ? (
           <>
@@ -97,7 +91,15 @@ const Post = ({
         ) : (
           <>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            {photos && <Gallery photos={photos} />}
+
+            {photos &&
+              photos.map(({ node }) => (
+                <Img
+                  key={node.base}
+                  fluid={node.childImageSharp.fluid}
+                  className={style.coverImage}
+                />
+              ))}
 
             <Navigation
               previousPath={previousPath}
