@@ -2,6 +2,7 @@
 title: "Websites"
 date: "2020-10-30"
 path: "/websites"
+directory: "pages"
 ---
 
 ## Classic Homes

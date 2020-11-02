@@ -4,6 +4,8 @@ import { Link } from "gatsby";
 import Img from "gatsby-image";
 import Navigation from "./navigation";
 import { toKebabCase } from "../helpers";
+import Gallery from "react-photo-gallery";
+const classNames = require("classnames");
 
 import style from "../styles/post.module.css";
 
@@ -26,8 +28,6 @@ const Post = ({
   const previousLabel = previousPost && previousPost.frontmatter.title;
   const nextPath = nextPost && nextPost.frontmatter.path;
   const nextLabel = nextPost && nextPost.frontmatter.title;
-
-  console.log(photos);
 
   return (
     <div className={style.post}>
@@ -55,29 +55,39 @@ const Post = ({
           />
         )}
 
-        <div className={style.buttonArea}>
+        <div className={classNames(style.buttonArea, style.group)}>
           {repolink && (
-            <form action={repolink} target="_blank">
-              <input
-                type="submit"
-                className={style.button}
-                value="Repository"
-              />
-            </form>
+            <div className={classNames(style.col, style.span_1_of_3)}>
+              <form action={repolink} target="_blank">
+                <input
+                  type="submit"
+                  className={style.button}
+                  value="Repository"
+                />
+              </form>
+            </div>
           )}
           {modellink && (
-            <form action={modellink} target="_blank">
-              <input type="submit" className={style.button} value="3D Model" />
-            </form>
+            <div className={classNames(style.col, style.span_1_of_3)}>
+              <form action={modellink} target="_blank">
+                <input
+                  type="submit"
+                  className={style.button}
+                  value="3D Model"
+                />
+              </form>
+            </div>
           )}
           {attributionlink && (
-            <form action={attributionlink} target="_blank">
-              <input
-                type="submit"
-                className={style.button}
-                value="Attribution"
-              />
-            </form>
+            <div className={classNames(style.col, style.span_1_of_3)}>
+              <form action={attributionlink} target="_blank">
+                <input
+                  type="submit"
+                  className={style.button}
+                  value="Attribution"
+                />
+              </form>
+            </div>
           )}
         </div>
 
@@ -93,10 +103,10 @@ const Post = ({
             <div dangerouslySetInnerHTML={{ __html: html }} />
 
             {photos &&
-              photos.map(({ node }) => (
+              photos.map(photo => (
                 <Img
-                  key={node.base}
-                  fluid={node.childImageSharp.fluid}
+                  key={photo.node.publicURL}
+                  fluid={photo.node.childImageSharp.fluid}
                   className={style.coverImage}
                 />
               ))}

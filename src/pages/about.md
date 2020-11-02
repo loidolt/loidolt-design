@@ -2,6 +2,7 @@
 title: "About"
 date: "2020-10-30"
 path: "/about"
+directory: "pages"
 ---
 
 ## Who Am I?

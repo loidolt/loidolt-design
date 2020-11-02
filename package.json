@@ -1,12 +1,11 @@
 {
-  "name": "gatsby-starter-hello-friend",
-  "description": "A simple starter for Gatsby. That's it.",
-  "version": "0.2.0",
-  "author": "Radek Kozieł <radoslaw.koziel@gmail.com>",
+  "name": "loidolt-design",
+  "description": "Official Loidolt Design website",
+  "version": "0.1.0",
+  "author": "Chris Loidolt <loidolt@gmail.com>",
   "keywords": [
     "gatsby",
     "minimal",
-    "starter",
     "blog",
     "theme",
     "dark",
@@ -21,6 +20,7 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.0.76",
     "gatsby-awesome-pagination": "^0.3.3",
     "gatsby-image": "^2.0.20",
@@ -39,6 +39,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0",
+    "react-photo-gallery": "^8.0.0",
     "sharp": "^0.26.2"
   },
   "devDependencies": {
@@ -66,9 +67,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/panr/gatsby-starter-hello-friend"
+    "url": "https://github.com/loidolt/loidolt-design"
   },
   "bugs": {
-    "url": "https://github.com/panr/gatsby-starter-hello-friend/issues"
+    "url": "https://github.com/loidolt/loidolt-design/issues"
   }
 }

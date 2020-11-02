@@ -24,9 +24,9 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
           node {
             frontmatter {
               path
+              directory
               title
               tags
-              directory
             }
             fileAbsolutePath
           }
@@ -134,7 +134,7 @@ exports.sourceNodes = ({ actions }) => {
       author: String
       date: Date! @dateformat
       path: String!
-      directory: String
+      directory: String!
       tags: [String!]
       excerpt: String
       coverImage: File @fileByRelativePath

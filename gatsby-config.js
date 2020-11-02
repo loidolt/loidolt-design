@@ -13,7 +13,7 @@ module.exports = {
     author: `Chris Loidolt`,
     logo: {
       src: "",
-      alt: "",
+      alt: "Loidolt Design",
     },
     logoText: "Loidolt Design",
     defaultTheme: "dark",

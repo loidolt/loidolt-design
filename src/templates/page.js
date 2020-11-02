@@ -12,6 +12,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       title,
       date,
       path,
+      directory,
       coverImage,
       excerpt,
       tags,
@@ -24,6 +25,8 @@ const BlogPostTemplate = ({ data, pageContext }) => {
     html,
   } = data.markdownRemark;
   const photos = data.allFile.edges;
+  console.log(directory);
+  console.log(photos);
   const { next, previous } = pageContext;
 
   return (
@@ -86,7 +89,7 @@ export const pageQuery = graphql`
     }
     allFile(
       filter: {
-        extension: { regex: "/(jpg)/" }
+        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
         relativeDirectory: { eq: $directory }
       }
     ) {

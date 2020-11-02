@@ -2,6 +2,7 @@
 title: "Showcase"
 date: "2020-10-30"
 path: "/showcase"
+directory: "pages"
 ---
 
 ## Header 2
