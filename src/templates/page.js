@@ -12,7 +12,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       title,
       date,
       path,
-      directory,
       coverImage,
       excerpt,
       tags,
@@ -24,10 +23,10 @@ const BlogPostTemplate = ({ data, pageContext }) => {
     id,
     html,
   } = data.markdownRemark;
-  const photos = data.allFile.edges;
+  const { next, previous, directory } = pageContext;
+
   console.log(directory);
-  console.log(photos);
-  const { next, previous } = pageContext;
+  console.log(data.allFile.edges);
 
   return (
     <Layout>
@@ -43,7 +42,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         repolink={repolink}
         modellink={modellink}
         attributionlink={attributionlink}
-        photos={photos}
+        photos={data.allFile.edges}
         previousPost={previous}
         nextPost={next}
       />
@@ -96,12 +95,16 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
+            original {
+              width
+              height
+            }
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+              originalName
+              originalImg
             }
           }
-          base
-          publicURL
         }
       }
     }

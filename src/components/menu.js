@@ -98,7 +98,7 @@ const Menu = ({
                 aria-label="Menu"
               >
                 {menuMoreText || 'Menu'}{' '}
-                <span className={style.menuArrow}>></span>
+                <span className={style.menuArrow}>{'>'}</span>
               </button>
               {isSubMenuVisible ? (
                 <ul className={style.subMenu}>

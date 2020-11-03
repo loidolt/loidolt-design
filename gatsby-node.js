@@ -85,6 +85,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
         component: pageTemplate,
         context: {
           type: getType(node),
+          directory: node.frontmatter.directory,
           next: isNextSameType ? next : null,
           previous: isPreviousSameType ? previous : null,
         },

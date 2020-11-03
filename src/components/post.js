@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Img from "gatsby-image";
 import Navigation from "./navigation";
 import { toKebabCase } from "../helpers";
-import Gallery from "react-photo-gallery";
+import Gallery from "../components/gallery";
 const classNames = require("classnames");
 
 import style from "../styles/post.module.css";
@@ -102,14 +102,20 @@ const Post = ({
           <>
             <div dangerouslySetInnerHTML={{ __html: html }} />
 
-            {photos &&
-              photos.map(photo => (
-                <Img
-                  key={photo.node.publicURL}
-                  fluid={photo.node.childImageSharp.fluid}
-                  className={style.coverImage}
-                />
-              ))}
+            {photos && (
+              <Gallery
+                columns={width => {
+                  if (width < 700) {
+                    return 2;
+                  } else if (width < 1000) {
+                    return 3;
+                  } else {
+                    return 6;
+                  }
+                }}
+                photos={photos}
+              />
+            )}
 
             <Navigation
               previousPath={previousPath}
