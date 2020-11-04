@@ -11,6 +11,8 @@ excerpt: "Showing a new home buyer a render and blueprint is a good place to sta
 tags: ["3D Printing", "CNC"]
 ---
 
+# Summary
+
 Showing a new home buyer a render and blueprint is a good place to start, but nothing beats the experience of holding a physical representation of the floor plan in the hand.
 
 These 3D Printed floor plans and the CNC carved terrain they fit in provide a tactile way to show a buyer what they are purchasing and how it will look after it's built.
