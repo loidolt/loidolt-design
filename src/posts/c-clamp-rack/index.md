@@ -3,11 +3,11 @@ title: "C Clamp Rack"
 date: "2017-12-25"
 path: "/c-clamp-rack"
 directory: "c-clamp-rack"
-coverImage: ""
+coverImage: "CClampHolderResized (6).jpg"
 repolink: ""
 modellink: "http://a360.co/2qjqUcA"
 attributionlink: ""
-excerpt: ""
+excerpt: "I made these C Clamp Holder Racks for my Dad as a Christmas present."
 tags: ["3D Printing", "CNC"]
 ---
 

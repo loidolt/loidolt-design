@@ -3,11 +3,11 @@ title: "Cabinet Kegerator"
 date: "2017-09-14"
 path: "/cabinet-kegerator"
 directory: "cabinet-kegerator"
-coverImage: ""
+coverImage: "CabinetKegeratorResized (8).jpg"
 repolink: ""
 modellink: "https://drive.google.com/open?id=0B5-KKKQf0IzbS0hMbjZybUI4MUU"
 attributionlink: ""
-excerpt: ""
+excerpt: "This is kegerator was built as a wedding present for my brother. It is styled to match the existing kitchen cabinets in his house and features a custom concrete counter-top."
 tags: ["Woodworking"]
 ---
 

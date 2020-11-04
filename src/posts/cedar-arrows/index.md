@@ -3,11 +3,11 @@ title: "Cedar Arrows"
 date: "2014-03-06"
 path: "/cedar-arrows"
 directory: "cedar-arrows"
-coverImage: ""
+coverImage: "9771668_orig.jpg"
 repolink: ""
 modellink: ""
 attributionlink: ""
-excerpt: ""
+excerpt: "This is really more a lesson in how I learned that it makes very little sense to try to make your own wood arrow shafts."
 tags: ["Woodworking"]
 ---
 

@@ -1,16 +1,14 @@
 ---
-​---
 title: "Automatic Winding Machine"
 date: "2016-10-26"
 path: "/automatic-winding-machine"
 directory: "automatic-winding-machine"
-coverImage: ""
+coverImage: "AutomaticCoiler.jpg"
 repolink: "https://github.com/loidolt/automatic-coiler"
 modellink: "https://www.thingiverse.com/thing:1852171"
 attributionlink: ""
 excerpt: "An automatic winding machine for coiling up small cords, strings or wire."
 tags: ["3D Printing", "Electronics"]
-​---
 ---
 
 # Summary

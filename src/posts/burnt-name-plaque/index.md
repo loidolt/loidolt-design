@@ -3,11 +3,11 @@ title: "Burnt Name Plaque"
 date: "2018-01-24"
 path: "/burnt-name-plaque"
 directory: "burnt-name-plaque"
-coverImage: ""
+coverImage: "RuebensonPlaqueResized (9).jpg"
 repolink: ""
 modellink: ""
 attributionlink: ""
-excerpt: ""
+excerpt: "Burnt wood plaque carved from a piece of cherry and burnt with a blowtorch."
 tags: ["Woodworking"]
 ---
 

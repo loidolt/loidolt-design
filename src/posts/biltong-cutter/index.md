@@ -3,11 +3,11 @@ title: "Biltong Cutter"
 date: "2014-03-07"
 path: "/biltong-cutter"
 directory: "biltong-cutter"
-coverImage: ""
+coverImage: "BiltongCutter (24).jpg"
 repolink: ""
 modellink: ""
 attributionlink: ""
-excerpt: ""
+excerpt: "Solid wood biltong cutter using a planer blade as a cutter."
 tags: ["Woodworking"]
 ---
 

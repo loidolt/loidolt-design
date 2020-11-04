@@ -3,11 +3,11 @@ title: "Black and White Ebony Razor Scales"
 date: "2014-02-03"
 path: "/black-and-white-ebony-razor-scales"
 directory: "black-and-white-ebony-razor-scales"
-coverImage: ""
+coverImage: "BWEbonyScales (4).jpg"
 repolink: ""
 modellink: ""
 attributionlink: ""
-excerpt: ""
+excerpt: "Custom set of straight razor scales made from black and white ebony."
 tags: ["Woodworking"]
 ---
 

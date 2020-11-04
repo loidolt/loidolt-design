@@ -3,11 +3,11 @@ title: "Bow String Jig"
 date: "2014-03-09"
 path: "/bow-string-jig"
 directory: "bow-string-jig"
-coverImage: ""
+coverImage: "BowStringJig (19).jpg"
 repolink: ""
 modellink: ""
 attributionlink: ""
-excerpt: ""
+excerpt: "Not one of my more glamorous projects, but hey, sometimes things just need to function. This is a single pivot design bow string jig."
 tags: ["Woodworking"]
 ---
 

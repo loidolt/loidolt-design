@@ -27,6 +27,7 @@ const GatsbyImage = ({ index, onClick, photo, margin }) => (
     <Img
       fixed={typeof window === "undefined" ? { src: {} } : undefined}
       fluid={photo.fluid}
+      alt={photo.fluid.originalName}
     />
   </ImageWrapper>
 );
