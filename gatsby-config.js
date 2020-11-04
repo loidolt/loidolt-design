@@ -23,7 +23,7 @@ module.exports = {
     mainMenu: [
       {
         title: "Projects",
-        path: "/showcase",
+        path: "/",
       },
       {
         title: "About",
