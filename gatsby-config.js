@@ -4,14 +4,17 @@ const postCSSUrl = require("postcss-url");
 const postCSSImports = require("postcss-import");
 const cssnano = require("cssnano");
 const postCSSMixins = require("postcss-mixins");
+const queries = require("./src/helpers/algolia-queries");
 
-require("dotenv").config();
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   siteMetadata: {
     title: `Loidolt Design`,
     description: `I like learning and creating. I strongly believe the world needs more of that.`,
-    copyrights: "",
+    copyrights: "Loidolt Design 2020",
     author: `Chris Loidolt`,
     logo: {
       src: "",
@@ -118,6 +121,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries,
+        chunkSize: 10000, // default: 1000
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Loidolt Design`,
@@ -127,14 +139,6 @@ module.exports = {
         theme_color: `#292a2d`,
         display: `minimal-ui`,
         icon: `src/images/CLLightBulbBlue.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        queries: require("./src/helpers/algolia-queries"),
       },
     },
   ],
