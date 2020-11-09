@@ -2,23 +2,10 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
-import algoliasearch from "algoliasearch/lite";
-import {
-  InstantSearch,
-  SearchBox,
-  Hits,
-  Configure,
-} from "react-instantsearch-dom";
 
 import Menu from "./menu";
-import { CustomHits } from "./search";
 
 import style from "../styles/header.module.css";
-
-const searchClient = algoliasearch(
-  "RLTU8HW1H7",
-  "7038bb8ae4a108d1e4789b53dfe38524",
-);
 
 const Header = props => {
   const {
@@ -46,15 +33,6 @@ const Header = props => {
   };
   const onToggleMobileMenu = () => toggleMobileMenu(!isMobileMenuVisible);
   const onToggleSubMenu = () => toggleSubMenu(!isSubMenuVisible);
-
-  // Search
-  const [hasInput, setInput] = useState(false);
-
-  const ClickOutHandler = require("react-onclickout");
-  const onClickOut = () => {
-    document.getElementsByClassName("ais-SearchBox-input")[0].value = "";
-    setInput(false);
-  };
 
   return (
     <>
@@ -94,30 +72,6 @@ const Header = props => {
               onToggleSubMenu={onToggleSubMenu}
               onChangeTheme={onChangeTheme}
             />
-
-            <ClickOutHandler onClickOut={onClickOut}>
-              <InstantSearch searchClient={searchClient} indexName="posts">
-                <Configure hitsPerPage={5} />
-                <SearchBox
-                  showLoadingIndicator
-                  className="searchbox"
-                  class="ais-SearchBox-input"
-                  submit={<></>}
-                  reset={<></>}
-                  translations={{
-                    placeholder: "Search Projects",
-                  }}
-                  onKeyUp={event => {
-                    setInput(event.currentTarget.value !== "");
-                  }}
-                />
-
-                {/*forcefeed className because component does not accept natively as prop*/}
-                <div className={!hasInput ? "input-empty" : "input-value"}>
-                  <CustomHits hitComponent={Hits} />
-                </div>
-              </InstantSearch>
-            </ClickOutHandler>
           </span>
         </div>
       </header>
