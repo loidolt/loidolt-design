@@ -38,10 +38,6 @@ module.exports = {
         title: "Websites",
         path: "/websites",
       },
-      {
-        title: "Photography",
-        path: "/websites",
-      },
     ],
   },
   plugins: [
