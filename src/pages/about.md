@@ -86,5 +86,5 @@ My personality can be best defined by my level of creativity and quality in work
 - USPA Skydiving Coach
 - USPA Skydiving IAD Instructor
 - USPA Pro License
-- USHPA P3 License
+- USHPA P-2 License
 - FAA Senior Parachute Rigger (Back and Seat)
