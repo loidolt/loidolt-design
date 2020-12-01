@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
-import Post from "../components/post";
-import Navigation from "../components/navigation";
 import algoliasearch from "algoliasearch/lite";
 import {
   InstantSearch,
   SearchBox,
   Hits,
   Configure,
+  Pagination,
+  Stats,
 } from "react-instantsearch-dom";
 
 import { CustomHits } from "../components/search";
-
-import "../styles/layout.css";
 
 const searchClient = algoliasearch(
   "RLTU8HW1H7",
@@ -24,42 +22,37 @@ const Search = () => {
   // Search
   const [hasInput, setInput] = useState(false);
 
-  const ClickOutHandler = require("react-onclickout");
-  const onClickOut = () => {
-    document.getElementsByClassName("ais-SearchBox-input")[0].value = "";
-    setInput(false);
-  };
-
   return (
     <>
       <SEO />
       <Layout>
-        <ClickOutHandler onClickOut={onClickOut}>
-          <InstantSearch searchClient={searchClient} indexName="posts">
-            <Configure hitsPerPage={5} />
+        <InstantSearch searchClient={searchClient} indexName="posts">
+          <Configure hitsPerPage={10} />
 
-            <div className="infoBanner">
-              <SearchBox
-                showLoadingIndicator
-                className="searchbox"
-                class="ais-SearchBox-input"
-                submit={<></>}
-                reset={<></>}
-                translations={{
-                  placeholder: "Search Projects",
-                }}
-                onKeyUp={event => {
-                  setInput(event.currentTarget.value !== "");
-                }}
-              />
+          <div className="infoBanner">
+            <SearchBox
+              translations={{
+                placeholder: "Search Projects",
+              }}
+              onReset={event => {
+                setInput(false);
+              }}
+              onKeyUp={event => {
+                setInput(event.currentTarget.value !== "");
+              }}
+            />
+            <div className={!hasInput ? "hidden" : ""}>
+              <Stats />
             </div>
+          </div>
 
-            {/*forcefeed className because component does not accept natively as prop*/}
-            <div className={!hasInput ? "input-empty" : "input-value"}>
-              <CustomHits hitComponent={Hits} />
-            </div>
-          </InstantSearch>
-        </ClickOutHandler>
+          <div className={!hasInput ? "hidden" : ""}>
+            <CustomHits hitComponent={Hits} />
+          </div>
+          <div className={hasInput ? "hidden" : ""}>
+            ^ You have to type stuff up here ^
+          </div>
+        </InstantSearch>
       </Layout>
     </>
   );
