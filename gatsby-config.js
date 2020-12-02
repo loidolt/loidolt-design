@@ -38,6 +38,10 @@ module.exports = {
         title: "Websites",
         path: "/websites",
       },
+      {
+        title: "Contact",
+        path: "/contact",
+      },
     ],
   },
   plugins: [

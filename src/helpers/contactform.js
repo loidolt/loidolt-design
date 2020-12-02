@@ -1,30 +1,45 @@
 import React from "react";
+const classNames = require("classnames");
+
+import style from "../styles/contact.module.css";
 
 export default class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
-      status: ""
+      status: "",
     };
   }
 
   render() {
     const { status } = this.state;
     return (
-      <form
-        onSubmit={this.submitForm}
-        action="https://formspree.io/f/mzbkaobg"
-        method="POST"
-      >
-        <label>Email:</label>
-        <input type="email" name="email" />
-        <label>Message:</label>
-        <input type="text" name="message" />
-        <input type="text" name="_gotcha" style="display:none" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
-      </form>
+      <div className="infoBanner">
+        <span className={style.title}>Contact</span>
+        <br />
+        <form
+          onSubmit={this.submitForm}
+          action="https://formspree.io/f/mzbkaobg"
+          method="POST"
+        >
+          <label className={style.label}>Name</label>
+          <input type="text" name="name" className={style.input} />
+          <label className={style.label}>Email</label>
+          <input type="email" name="email" className={style.input} />
+          <label className={style.label}>Message</label>
+          <textarea type="text" name="message" rows="5" className={style.input} />
+          <input type="text" name="_gotcha" className={style.hp} />
+          <div className={classNames(style.buttonArea, style.group)}>
+            {status === "SUCCESS" ? (
+              <p>Thanks!</p>
+            ) : (
+              <button className={style.button}>Submit</button>
+            )}
+            {status === "ERROR" && <p>Ooops! There was an error.</p>}
+          </div>
+        </form>
+      </div>
     );
   }
 
