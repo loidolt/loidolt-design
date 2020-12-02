@@ -18,73 +18,23 @@ My personality can be best defined by my level of creativity and quality in work
 
 ---
 
-## Skills
-
-### Workshop
-
-- Woodworking
-- CNC Routing and Machining
-- Laser Cutter
-- Composites
-- Metalworking
-- Industrial Sewing
-- Electronics Soldering and Assembly
-
-### CAD
-
-- Fusion 360
-- SketchUp
-- Planimetrics
-- Photogrammetry
-- Trimble Business Center
-- Earthworks Surface Modeling
-- Global Mapper
-- Propeller
-- DraftSight
-
-### Creative Software
-
-- Adobe Photoshop
-- Affinity Photo
-- Adobe Illustrator
-- Affinity Design
-- Inkscape
-- Adobe Lightroom
-- Pixelmator Photo
-- Adobe Premiere Pro
-- DaVinci Resolve
-- ZBrush
-
-### Programming
-
-- HTML/CSS
-- Javascript
-- React
-- Gatsby
-- C++
-- Python
-- SQL
-
-
-## Certifications
-
-### Aviation
-
-- FAA Private Pilot
-- High Performance Endorsement
-- FAA Commercial Drone Pilot
-
-### SCUBA Diving
-
-- PADI Rescue Diver
-- PADI Divemaster
-- Emergency First Responder
-
-### Skydiving/Paragliding
-
-- USPA D License
-- USPA Skydiving Coach
-- USPA Skydiving IAD Instructor
-- USPA Pro License
-- USHPA P-2 License
-- FAA Senior Parachute Rigger (Back and Seat)
+| Skills                               | Qualifications |
+| -----------                          | ----------- |
+| Woodworking                          | FAA Private Pilot       |
+| CNC Routing and Machining            | High Performance Endorsement        |
+| Laser Cutting                        | FAA Commercial Drone Pilot       |
+| Composites                           | PADI Rescue Diver        |
+| Metalworking                         | PADI Divemaster        |
+| Industrial Sewing                    | Emergency First Responder        |
+| Electronics Soldering and Assembly   | USPA D Skydiving License        |
+| 2D/3D CAD                            | USPA Skydiving Coach        |
+| Photogrammetry                       | USPA Skydiving IAD Instructor        |
+| Planimetrics                         | USPA Pro License        |
+| Earthworks Surface Modeling          | USHPA P-2 License        |
+| Raster Graphics                      | FAA Senior Parachute Rigger (Back and Seat)        |
+| Vector Graphics                      |         |
+| Video Editing                        |         |
+| HTML/CSS/JS/PHP                      |         |
+| ReactJS                              |         |
+| Python                               |         |
+| C++                                  |         |
