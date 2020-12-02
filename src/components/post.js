@@ -49,10 +49,12 @@ const Post = ({
         </div>
 
         {coverImage && (
-          <Img
-            fluid={coverImage.childImageSharp.fluid}
-            className={style.coverImage}
-          />
+          <Link to={path}>
+            <Img
+              fluid={coverImage.childImageSharp.fluid}
+              className={style.coverImage}
+            />
+          </Link>
         )}
 
         <div className={classNames(style.buttonArea, style.group)}>
