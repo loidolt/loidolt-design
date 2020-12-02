@@ -8,7 +8,7 @@ repolink: "https://github.com/loidolt/automatic-coiler"
 modellink: "https://www.thingiverse.com/thing:1852171"
 attributionlink: ""
 excerpt: "An automatic winding machine for coiling up small cords, strings or wire."
-tags: ["3D Printing", "Electronics"]
+tags: ["3DPrinting", "Electronics"]
 ---
 
 # Summary

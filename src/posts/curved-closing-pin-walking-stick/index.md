@@ -8,7 +8,7 @@ repolink: ""
 modellink: ""
 attributionlink: ""
 excerpt: ""
-tags: ["3D Printing", "CNC"]
+tags: ["3DPrinting", "CNC"]
 ---
 
 # Summary

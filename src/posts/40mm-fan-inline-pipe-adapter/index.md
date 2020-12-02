@@ -8,7 +8,7 @@ repolink: "https://www.thingiverse.com/thing:2642196"
 modellink: "https://drive.google.com/file/d/0B5-KKKQf0IzbVDlwUmtMT2xZMVk/view"
 attributionlink: ""
 excerpt: "Simple adapter to fit an 40mm fan in a standard 2in schedule 40 PVC pipe."
-tags: ["3D Printing", "Electronics"]
+tags: ["3DPrinting", "Electronics"]
 ---
 
 # Summary

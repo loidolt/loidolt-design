@@ -25,9 +25,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   } = data.markdownRemark;
   const { next, previous, directory } = pageContext;
 
-  console.log(directory);
-  console.log(data.allFile.edges);
-
   return (
     <Layout>
       <SEO title={title} description={excerpt || autoExcerpt} />

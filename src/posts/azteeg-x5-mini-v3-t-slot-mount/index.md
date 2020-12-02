@@ -8,7 +8,7 @@ repolink: "https://www.thingiverse.com/thing:1802246"
 modellink: "https://drive.google.com/open?id=0B5-KKKQf0Izbbk5PUkM5cEZ6ZjA"
 attributionlink: "http://www.thingiverse.com/thing:329323"
 excerpt: "Simple t-slot extrusion mount for Azteeg X5 Mini V3"
-tags: ["3D Printing", "Electronics"]
+tags: ["3DPrinting", "Electronics"]
 ---
 
 # Summary

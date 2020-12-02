@@ -8,7 +8,7 @@ repolink: "https://www.thingiverse.com/thing:1670545"
 modellink: "https://drive.google.com/open?id=0B5-KKKQf0IzbRV9hZUUwbEZ3dzg"
 attributionlink: "http://www.thingiverse.com/thing:1766797"
 excerpt: ""
-tags: ["3D Printing"]
+tags: ["3DPrinting"]
 ---
 
 # Summary

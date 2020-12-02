@@ -8,7 +8,7 @@ repolink: "https://www.thingiverse.com/thing:993923"
 modellink: "https://drive.google.com/open?id=0B5-KKKQf0IzbNFAtei1aeWxuMEE"
 attributionlink: "https://www.sparkfun.com/products/9612"
 excerpt: ""
-tags: ["3D Printing", "Electronics"]
+tags: ["3DPrinting", "Electronics"]
 ---
 
 # Summary

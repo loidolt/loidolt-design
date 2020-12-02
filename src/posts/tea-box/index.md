@@ -8,7 +8,7 @@ repolink: ""
 modellink: "http://a360.co/2CEa9uL"
 attributionlink: ""
 excerpt: ""
-tags: ["3D Printing"]
+tags: ["3DPrinting"]
 ---
 
 # About

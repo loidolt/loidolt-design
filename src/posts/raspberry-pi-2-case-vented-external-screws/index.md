@@ -8,7 +8,7 @@ repolink: "https://www.thingiverse.com/thing:981998"
 modellink: "https://drive.google.com/open?id=0B5-KKKQf0IzbNkcyLWJGSVpPY1E"
 attributionlink: ""
 excerpt: ""
-tags: ["3D Printing", "Electronics"]
+tags: ["3DPrinting", "Electronics"]
 ---
 
 # Summary

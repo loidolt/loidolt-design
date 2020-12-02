@@ -8,7 +8,7 @@ repolink: "https://www.thingiverse.com/thing:3191739"
 modellink: "https://drive.google.com/open?id=1fZd182x0MvDdAoR2U9X4AdU-e2trVl7b"
 attributionlink: ""
 excerpt: ""
-tags: ["3D Printing"]
+tags: ["3DPrinting"]
 ---
 
 Simple mount for the cheap (but very useful) First Alert AF400 Tundra Fire Extinguishing Aerosol Spray cans that can be found many places, amazon link below:

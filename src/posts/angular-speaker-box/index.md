@@ -8,7 +8,7 @@ repolink: "https://www.thingiverse.com/thing:2103156"
 modellink: "https://drive.google.com/drive/folders/1mO012gTd04_Y3bmGkYtwgUhhKJFLJru8"
 attributionlink: "3D printed angular speaker enclosure for 3 in speaker drivers."
 excerpt: "3D printed angular speaker enclosure for 3 in speaker drivers."
-tags: ["3D Printing", "Electronics"]
+tags: ["3DPrinting", "Electronics"]
 ---
 
 # Summary

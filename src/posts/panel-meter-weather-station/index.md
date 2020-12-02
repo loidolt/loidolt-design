@@ -8,7 +8,7 @@ repolink: "https://drive.google.com/open?id=1UfyQQCw6rf-X2-uB6e\_UaPbBidxrGfp2"
 modellink: "http://a360.co/2zFBagf"
 attributionlink: "https://grady-hillhouse.squarespace.com/blog/2016/1/20/particle-photon-weather-station"
 excerpt: ""
-tags: ["3D Printing", "Electronics"]
+tags: ["3DPrinting", "Electronics"]
 ---
 
 # Summary

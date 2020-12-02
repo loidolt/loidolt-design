@@ -8,7 +8,7 @@ repolink: "https://github.com/loidolt/DogFoodDispenser"
 modellink: "http://a360.co/2jZrkzf"
 attributionlink: ""
 excerpt: "An automatic dog feeder that will feed a selected portion of food twice a day at the times set."
-tags: ["3D Printing", "Electronics"]
+tags: ["3DPrinting", "Electronics"]
 ---
 
 # About

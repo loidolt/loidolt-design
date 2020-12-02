@@ -7,10 +7,10 @@ import {
   SearchBox,
   Hits,
   Configure,
-  Pagination,
   Stats,
 } from "react-instantsearch-dom";
 
+import TagCloud from "../components/tagcloud";
 import { CustomHits } from "../components/search";
 
 const searchClient = algoliasearch(
@@ -53,6 +53,8 @@ const Search = () => {
             ^ You have to type stuff up here ^
           </div>
         </InstantSearch>
+        <br />
+        <TagCloud />
       </Layout>
     </>
   );

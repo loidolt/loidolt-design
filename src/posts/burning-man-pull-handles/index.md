@@ -8,7 +8,7 @@ repolink: ""
 modellink: ""
 attributionlink: ""
 excerpt: "These horn and flame-shaped pull string knobs were made for my friend Nick Burden. He used these to activate the horn and flamethrower on a cart he made for Burning Man."
-tags: ["3D Printing"]
+tags: ["3DPrinting"]
 ---
 
 # Summary
