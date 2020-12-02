@@ -33,8 +33,10 @@ My personality can be best defined by my level of creativity and quality in work
 | Earthworks Surface Modeling          | USHPA P-2 License        |
 | Raster Graphics                      | FAA Senior Parachute Rigger (Back and Seat)        |
 | Vector Graphics                      |         |
-| Video Editing                        |         |
+| Photography                          |         |
+| Photo/Video Editing                  |         |
 | HTML/CSS/JS/PHP                      |         |
 | ReactJS                              |         |
 | Python                               |         |
 | C++                                  |         |
+| Photography                          |         |
