@@ -5,8 +5,8 @@ path: "/delta-1160-table-saw-restoration"
 directory: "delta-1160-table-saw-restoration"
 coverImage: "Delta1160TableSawRestored (27).jpg"
 repolink: ""
-modellink: "http://a360.co/2zPKLEz"
-attributionlink: "http://thegizmodojo.com/"
+modellink: "https://a360.co/2zPKLEz"
+attributionlink: "https://thegizmodojo.com/"
 excerpt: ""
 tags: ["Restoration"] 
 ---
@@ -15,7 +15,7 @@ tags: ["Restoration"]
 
 This is a Delta 1160 Table Saw, serial number 47-1196. It's a tilting-table machine (rather than tilting-arbor like most modern table saws) and is the table saw side of a Delta Table Saw/ Jointer Combo marketed towards enthusiast home woodworkers in the 1940s.
 
-I purchased this machine on October 8th, 2017 along with the accompanying 6in Jointer (to complete the combo unit) from a local makerspace in Broomfield, CO called [The Gizmo Dojo](http://thegizmodojo.com/). The Gizmo Dojo received the machine as a donation, the previous owner's information was not made available to me. They intended to restore it as well before finding another table saw that was better suited to their space.
+I purchased this machine on October 8th, 2017 along with the accompanying 6in Jointer (to complete the combo unit) from a local makerspace in Broomfield, CO called [The Gizmo Dojo](https://thegizmodojo.com/). The Gizmo Dojo received the machine as a donation, the previous owner's information was not made available to me. They intended to restore it as well before finding another table saw that was better suited to their space.
 
 # Initial Condition
 

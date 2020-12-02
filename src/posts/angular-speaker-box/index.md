@@ -55,7 +55,7 @@ Lightly clamp the two pieces together while they dry. I simply used some masking
 
 - 2 Needed
 
-- [http://www.ebay.com/itm/172123969777?\_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT](http://www.ebay.com/itm/172123969777?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
+- [https://www.ebay.com/itm/172123969777?\_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT](https://www.ebay.com/itm/172123969777?_trksid=p2057872.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
 
 (The speakers at the link above are the one's I used and can confirm fit well (and sound pretty great considering the price!) You do not have to use those, any standard 3in speaker should fit as well.)
 

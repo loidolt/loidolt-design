@@ -6,14 +6,14 @@ directory: "black-swift-desk-logos"
 coverImage: "BlackSwiftLogoFinishedResized (2).jpg"
 repolink: ""
 modellink: ""
-attributionlink: "http://www.treecraftdesignbuild.com/"
+attributionlink: "https://www.treecraftdesignbuild.com/"
 excerpt: "Black Swift is an SEC-registered investment advisor located in Denver, CO. They wanted to make something out of wood that showcased their logo and could sit on a desk or shelf to give their clients as holiday presents."
 tags: ["Woodworking"]
 ---
 
 # About The Job
 
-This job was passed on to me by Aaron Smith from Treecraft ([http://www.treecraftdesignbuild.com/](http://www.treecraftdesignbuild.com/).) He does amazing work, I highly recommend checking out his website.
+This job was passed on to me by Aaron Smith from Treecraft ([https://www.treecraftdesignbuild.com/](https://www.treecraftdesignbuild.com/).) He does amazing work, I highly recommend checking out his website.
 
 Black Swift is an SEC-registered investment advisor located in Denver, CO. They wanted to make something out of wood that showcased their logo and could sit on a desk or shelf to give their clients as holiday presents.
 

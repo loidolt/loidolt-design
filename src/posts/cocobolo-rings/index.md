@@ -13,7 +13,7 @@ tags: ["Woodworking"]
 
 # Summary
 
-I decided to make some wood rings for my sisters for Valentine’s Day. One of the nice things about rings is they require such a minimal amount of wood, making them great projects for scraps and expensive exotic woods. I chose to use a lovely piece of cocobolo that I found at my local [Woodcraft](http://www.woodcraft.com/) after some significant rummaging through the pile of turning blanks. I also picked up some thin CA glue to use as a finish.
+I decided to make some wood rings for my sisters for Valentine’s Day. One of the nice things about rings is they require such a minimal amount of wood, making them great projects for scraps and expensive exotic woods. I chose to use a lovely piece of cocobolo that I found at my local [Woodcraft](https://www.woodcraft.com/) after some significant rummaging through the pile of turning blanks. I also picked up some thin CA glue to use as a finish.
 
 This one took a little fiddling to get right. All of these were made by cutting a thin slab off the turning blank and drilling a hole in it the size closest to the inside diameter I needed as possible. However, if you aren’t within a very close margin of the finished inside diameter, pick the next smallest size, you can then just sand the inside bigger. I very roughly turned a tapered dowel to friction fit the ring and hold it on the lathe, this is also handy for sanding the inside.
 

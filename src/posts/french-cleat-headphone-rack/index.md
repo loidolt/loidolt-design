@@ -5,7 +5,7 @@ path: "/french-cleat-headphone-rack"
 directory: "french-cleat-headphone-rack"
 coverImage: "HeadphoneHolderResized (26).jpg"
 repolink: ""
-modellink: "http://a360.co/2CBZPax"
+modellink: "https://a360.co/2CBZPax"
 attributionlink: ""
 excerpt: ""
 tags: ["Woodworking"]

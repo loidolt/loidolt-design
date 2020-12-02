@@ -5,7 +5,7 @@ path: "/wine-glass-holder"
 directory: "wine-glass-holder"
 coverImage: "WineGlassHolderResized (1).jpg"
 repolink: ""
-modellink: "http://a360.co/2ohtnU3"
+modellink: "https://a360.co/2ohtnU3"
 attributionlink: ""
 excerpt: ""
 tags: ["Woodworking"]

@@ -6,7 +6,7 @@ directory: "kossel-mini-hexagonal-base"
 coverImage: "KosselMiniBase.png"
 repolink: "https://www.thingiverse.com/thing:1670545"
 modellink: "https://drive.google.com/open?id=0B5-KKKQf0IzbRV9hZUUwbEZ3dzg"
-attributionlink: "http://www.thingiverse.com/thing:1766797"
+attributionlink: "https://www.thingiverse.com/thing:1766797"
 excerpt: ""
 tags: ["3DPrinting"]
 ---
@@ -15,7 +15,7 @@ tags: ["3DPrinting"]
 
 This version is outdated, please check out version 2 by clicking the remix above or by following this link:
 
-[http://www.thingiverse.com/thing:1766797](http://www.thingiverse.com/thing:1766797)
+[https://www.thingiverse.com/thing:1766797](https://www.thingiverse.com/thing:1766797)
 
 In my struggle to contain the wire and visual mess of my Kossel Mini printers, I designed this base.
 

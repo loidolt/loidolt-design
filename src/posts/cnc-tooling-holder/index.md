@@ -5,7 +5,7 @@ path: "/cnc-tooling-holder"
 directory: "cnc-tooling-holder"
 coverImage: "CNCToolingHolderResized (1).jpg"
 repolink: ""
-modellink: "http://a360.co/2lXB9P9"
+modellink: "https://a360.co/2lXB9P9"
 attributionlink: ""
 excerpt: "This is a simple tooling holder for my Shapeoko 3."
 tags: ["Woodworking", "CNC"]

@@ -6,7 +6,7 @@ directory: "delta-37-207-jointer-restoration"
 coverImage: "DeltaJointerRestoration (35).jpg"
 repolink: ""
 modellink: "https://drive.google.com/open?id=101YAmQ7nopy2x3rlJKQLnaRSC9dITYQA"
-attributionlink: "http://thegizmodojo.com/"
+attributionlink: "https://thegizmodojo.com/"
 excerpt: ""
 tags: ["Restoration"]
 ---
@@ -16,7 +16,7 @@ tags: ["Restoration"]
 
 This is a Delta 07-207 6" Jointer. It's the jointer side of a Delta Table Saw/ Jointer Combo marketed towards enthusiast home woodworkers in the 1940s.
 
-I purchased this machine on October 8th, 2017 along with the accompanying Table Saw (to complete the combo unit) from a local makerspace in Broomfield, CO called [The Gizmo Dojo](http://thegizmodojo.com/). The Gizmo Dojo received the machine as a donation, the previous owner's information was not made available to me. They intended to restore it as well before finding another table saw that was better suited to their space.
+I purchased this machine on October 8th, 2017 along with the accompanying Table Saw (to complete the combo unit) from a local makerspace in Broomfield, CO called [The Gizmo Dojo](https://thegizmodojo.com/). The Gizmo Dojo received the machine as a donation, the previous owner's information was not made available to me. They intended to restore it as well before finding another table saw that was better suited to their space.
 
 
 # Initial Condition
