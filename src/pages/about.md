@@ -39,4 +39,3 @@ My personality can be best defined by my level of creativity and quality in work
 | ReactJS                              |         |
 | Python                               |         |
 | C++                                  |         |
-| Photography                          |         |
