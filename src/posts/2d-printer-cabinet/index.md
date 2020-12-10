@@ -1,6 +1,6 @@
 ---
 title: "2D Printer Cabinet"
-date: "2019-10-19"
+date: "2018-10-19"
 path: "/2d-printer-cabinet"
 directory: "2d-printer-cabinet"
 coverImage: "2DPrinterCabinet (1).jpg"
