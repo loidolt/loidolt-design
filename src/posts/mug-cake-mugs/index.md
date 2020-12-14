@@ -1,6 +1,6 @@
 ---
 title: "Mug Cake Mugs"
-date: "2018-09-18"
+date: "2019-09-18"
 path: "/mug-cake-mugs"
 directory: "mug-cake-mugs"
 coverImage: "MugCakeMugs (1).jpg"
