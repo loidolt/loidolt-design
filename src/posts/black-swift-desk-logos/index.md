@@ -8,7 +8,7 @@ repolink: ""
 modellink: ""
 attributionlink: "https://www.treecraftdesignbuild.com/"
 excerpt: "Black Swift is an SEC-registered investment advisor located in Denver, CO. They wanted to make something out of wood that showcased their logo and could sit on a desk or shelf to give their clients as holiday presents."
-tags: ["Woodworking"]
+tags: ["Woodworking", "CNC"]
 ---
 
 # About The Job
