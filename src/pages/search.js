@@ -31,6 +31,7 @@ const Search = () => {
 
           <div className="infoBanner">
             <SearchBox
+              autoFocus={true}
               translations={{
                 placeholder: "Search Projects",
               }}
