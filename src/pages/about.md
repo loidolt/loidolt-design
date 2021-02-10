@@ -22,17 +22,17 @@ My personality can be best defined by my level of creativity and quality in work
 | -----------                          | ----------- |
 | Woodworking                          | FAA Private Pilot       |
 | CNC Routing and Machining            | High Performance Endorsement        |
-| Laser Cutting                        | FAA Commercial Drone Pilot       |
-| Composites                           | PADI Rescue Diver        |
-| Metalworking                         | PADI Divemaster        |
-| Industrial Sewing                    | Emergency First Responder        |
-| Electronics Soldering and Assembly   | USPA D Skydiving License        |
-| 2D/3D CAD                            | USPA Skydiving Coach        |
-| Photogrammetry                       | USPA Skydiving IAD Instructor        |
-| Planimetrics                         | USPA Pro License        |
-| Earthworks Surface Modeling          | USHPA P-2 License        |
-| Raster Graphics                      | FAA Senior Parachute Rigger (Back and Seat)        |
-| Vector Graphics                      |         |
+| Laser Cutting                        | Complex Endorsement       |
+| Composites                           | FAA Commercial Drone Pilot        |
+| Metalworking                         | PADI Rescue Diver        |
+| Industrial Sewing                    | PADI Divemaster        |
+| Electronics Soldering and Assembly   | Emergency First Responder        |
+| 2D/3D CAD                            | USPA D Skydiving License        |
+| Photogrammetry                       | USPA Skydiving Coach        |
+| Planimetrics                         | USPA Skydiving IAD Instructor        |
+| Earthworks Surface Modeling          | USPA Pro License        |
+| Raster Graphics                      | USHPA P-2 License        |
+| Vector Graphics                      | FAA Senior Parachute Rigger (Back and Seat)        |
 | Photography                          |         |
 | Photo/Video Editing                  |         |
 | HTML/CSS/JS/PHP                      |         |

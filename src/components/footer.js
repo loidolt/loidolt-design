@@ -11,7 +11,7 @@ const Footer = ({ copyrights }) => (
       />
     ) : (
       <>
-        <span className="footerCopyrights">© 2020 Loidolt Design</span>
+        <span className="footerCopyrights">© 2021 Loidolt Design</span>
       </>
     )}
   </footer>
