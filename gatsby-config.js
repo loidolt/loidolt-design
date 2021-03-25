@@ -14,7 +14,7 @@ module.exports = {
   siteMetadata: {
     title: `Loidolt Design`,
     description: `I like learning and creating. I strongly believe the world needs more of that.`,
-    copyrights: "Loidolt Design 2020",
+    copyrights: "Loidolt Design 2021",
     author: `Chris Loidolt`,
     logo: {
       src: "",
