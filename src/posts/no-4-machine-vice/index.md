@@ -11,17 +11,17 @@ excerpt: ""
 tags: ["Restoration"]
 ---
 
-# About The Vice
+## About The Vice
 
-Short story this time. This number 4 machine vice came with my DP220 drill press (restoration coming soon!)
+A short story this time. This number 4 machine vice came with my DP220 drill press (restoration coming soon!)
 
-# Initial Condition
+## Initial Condition
 
-This vice was functional when I received it. As you can see from the picture, it needed some new paint and a little clean up on the bare metal surfaces. Operation wise, it was way too tight and had a tendency to stick in the middle 50% of the movement.
+This vice was functional when I received it. As you can see from the picture, it needed some new paint and a little clean-up on the bare metal surfaces. Operation-wise, it was way too tight and had a tendency to stick in the middle 50% of the movement.
 
-# Restoration
+## Restoration
 
-I used wire brushes on my angle grinder and cordless drill to clean up and strip the paint off all surfaces. Small parts were cleaned by soaking them in in white vinegar for 24 hours.
+I used wire brushes on my angle grinder and a cordless drill to clean up and strip the paint off all surfaces. Small parts were cleaned by soaking them in white vinegar for 24 hours.
 
 After cleanup, I repainted the previously painted surfaces with the same Rust-Oleum Smoke Gray Enamel I used on the Delta 1160 Table Saw as this vice will be used with the DP220 drill press (another Delta machine with the same color scheme.)
 

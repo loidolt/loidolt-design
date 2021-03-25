@@ -11,7 +11,7 @@ excerpt: ""
 tags: ["Woodworking"]
 ---
 
-# Summary
+## Summary
 
 Tool stand for my DeWalt DWS779 Sliding Compound Miter Saw. This stand uses the same simple 2x4 construction as my laser cutter and CNC router tool stands but also features two slide-out work support blocks.
 

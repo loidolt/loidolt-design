@@ -12,7 +12,7 @@ tags: ["3DPrinting"]
 
 ---
 
-# Summary
+## Summary
 
 Simple replacement knob for a attic or whole house fan timer switch.
 

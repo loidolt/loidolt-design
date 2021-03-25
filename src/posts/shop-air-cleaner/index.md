@@ -11,6 +11,6 @@ excerpt: ""
 tags: ["Woodworking"]
 ---
 
-# Summary
+## Summary
 
 Shop air cleaner built for my Dad's shop. The blower was salvaged from an old portable air conditioner unit.

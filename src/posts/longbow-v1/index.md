@@ -11,11 +11,11 @@ excerpt: ""
 tags: ["Woodworking"]
 ---
 
-# Summary
+## Summary
 
-This bow was very short lived and never made it off the tilling tree. The first mistake was in the pattern for the forms, which is also about all I have for pictures on this one.
+This bow was very short-lived and never made it off the tilling tree. The first mistake was in the pattern for the forms, which is also about all I have for pictures on this one.
 
-What I have there is a form for a horse bow type thing, but for all the wrong reasons. This shape put way too much stress on the mid limbs, at least for my tillering and wood choice.
+What I have here is a form for a horse bow type thing, but for all the wrong reasons. This shape put way too much stress on the mid limbs, at least for my tillering and wood choice.
 
 The next key to the puzzle of this bow’s breaking is wood choice, but more specifically the condition of the wood chosen. All three of the pieces (hickory, maple, and cherry) were of less than ideal quality. This may have been the most significant player in breaking the bow. Shaping and rough tillering went well enough. Floor tillering was a little tricky with that shape, especially for a first bow.
 

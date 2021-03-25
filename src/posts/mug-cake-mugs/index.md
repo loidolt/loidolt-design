@@ -11,8 +11,8 @@ excerpt: ""
 tags: ["Other"]
 ---
 
-# Summary
+## Summary
 
-This is a custom mug cake recipe mug that I designed for Valentines Day. I made a set of two for my wife initially, but ultimately ended up having more made for other friends and family later on.
+This is a custom mug cake recipe mug that I designed for Valentine's Day. I made a set of two for my wife initially but ultimately ended up having more made for other friends and family later on.
 
-Graphic provided in the gallery section free to use if you want to make one of your own.
+The graphic is provided in the gallery section free to use if you want to make one of your own.

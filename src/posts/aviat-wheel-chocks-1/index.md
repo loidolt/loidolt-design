@@ -11,7 +11,6 @@ excerpt: "First attempt at making wheel chocks for Aviat to include with their H
 tags: ["Other", "CNC"]
 ---
 
-# Summary
+## Summary
 
-Aviat reached out to me to build them some custom wheel chocks for to include with their Husky airplanes. This is the first attpempt to create those. Our initial idea was to make a silicone mold and roto-cast the chocks using urethane before filling them with expanding foam. Unfortunately, this plane didn't work very well primarily due to the geometry of the part but also due to my lack of roto-casting experience.
-
+Aviat reached out to me to build them some custom wheel chocks to include with their Husky airplanes. This is the first attempt to create those. Our initial idea was to make a silicone mold and roto-cast the chocks using urethane before filling them with expanding foam. Unfortunately, this plane didn't work very well primarily due to the geometry of the part but also due to my lack of roto-casting experience.

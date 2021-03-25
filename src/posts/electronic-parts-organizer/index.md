@@ -11,6 +11,6 @@ excerpt: "Apothecary style organizer to house all my capacitors, resistors, indu
 tags: ["Woodworking", "Electronics"]
 ---
 
-# Summary
+## Summary
 
-I built this apothecary style organizer to house all my capacitors, resistors, inductors, and transistors at my electronics workbench. I organize all of those types of parts in #1 coin envelops. Surprisingly, I was unable to find any organizers for that size envelope that fit the job.
+I built this apothecary-style organizer to house all my capacitors, resistors, inductors, and transistors at my electronics workbench. I organize all of those types of parts in #1 coin envelopes. Surprisingly, I was unable to find any organizers for that size envelope that fit the job.

@@ -11,6 +11,6 @@ excerpt: "Burnt wood plaque carved from a piece of cherry and burnt with a blowt
 tags: ["Woodworking"]
 ---
 
-# Summary
+## Summary
 
 Burnt wood plaque carved from a piece of cherry and burnt with a blowtorch.

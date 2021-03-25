@@ -12,9 +12,9 @@ tags: ["3DPrinting"]
 
 ---
 
-# Summary
+## Summary
 
-Magnetic detachable window blinds cord hanger. Keeps the cord from your blinds up off the ground for child proofing, robot vacuums, or whatever other reason you want cords to be managed and up out of the way.
+Magnetic detachable window blinds cord hanger. Keeps the cord from your blinds up off the ground for childproofing, robot vacuums, or whatever other reason you want cords to be managed and up out of the way.
 
 I designed these to replace the commercial options out there that cost upwards of $8-10 dollars per window, which is crazy for some plastic and a few magnets.
 
@@ -22,7 +22,7 @@ Uses cheap, ceramic round fridge magnets that can be readily found on Amazon or 
 
 Each window will need 3X 18 mm x 5 mm ceramic magnet.
 
-# Print Settings
+## Print Settings
 
 Printer brand:
 Prusa
@@ -52,10 +52,10 @@ Notes:
 Higher resolution is better since these are small parts with threads. If the thread fit is too tight, check your extrusion settings.
 
 
-# Post-Printing
+## Post-Printing
 
-## Assembly Instructions
-Place a magnet in the back of the base part and attach to the wall using double sided mounting tape.
+### Assembly Instructions
+Place a magnet in the back of the base part and attach it to the wall using double-sided mounting tape.
 
 Place a magnet in the male half of the cord clamp (be sure it is attracted to the base magnet on the outside face).
 

@@ -11,7 +11,7 @@ excerpt: ""
 tags: ["3DPrinting"]
 ---
 
-# Summary
+## Summary
 
 This version is outdated, please check out version 2 by clicking the remix above or by following this link:
 
@@ -23,11 +23,11 @@ Designed to fit almost any Kossel Mini style printer up to 220 mm build platform
 
 The model shows a Smoothieboard, though there is plenty of room for a RAMPS 1.4 or most other printer control boards in that space instead.
 
-You will need a saw, drill and some patience or a CNC/ laser cutter for the top and bottom sheets that complete the base as well as the bed support and insulation circle. 1:1 scale SVG files are included for all of those pieces. You can either print them out and cut around them or load up your CAM software of choice.
+You will need a saw, drill, and some patience or a CNC/ laser cutter for the top and bottom sheets that complete the base as well as the bed support and insulation circle. 1:1 scale SVG files are included for all of those pieces. You can either print them out and cut around them or load up your CAM software of choice.
 
 Thanks!
 
-# Print Settings
+## Print Settings
 
 **Printer:**
 
@@ -49,7 +49,7 @@ Doesn't Matter
 
 25%
 
-# Parts List
+## Parts List
 
 \*32x - M3 x 10 mm screws
 

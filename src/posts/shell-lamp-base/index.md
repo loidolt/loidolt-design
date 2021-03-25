@@ -11,6 +11,6 @@ excerpt: ""
 tags: ["3DPrinting", "Electronics"]
 ---
 
-# Summary
+## Summary
 
 Base made for shell06 ([https://www.thingiverse.com/thing:500108](https://www.thingiverse.com/thing:500108)) to support the shell and enclose an Adafrut Trinket and Neopixel ring.

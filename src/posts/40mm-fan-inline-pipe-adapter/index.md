@@ -11,7 +11,7 @@ excerpt: "Simple adapter to fit an 40mm fan in a standard 2in schedule 40 PVC pi
 tags: ["3DPrinting", "Electronics"]
 ---
 
-# Summary
+## Summary
 
 Simple adapter to fit an 40mm fan in a standard 2in schedule 40 PVC pipe.
 

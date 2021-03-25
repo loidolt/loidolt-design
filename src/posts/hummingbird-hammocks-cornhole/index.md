@@ -11,7 +11,7 @@ excerpt: ""
 tags: ["Woodworking, CNC"]
 ---
 
-# Summary
+## Summary
 
 Hummingbird Hammocks themed cornhole set made for and with my friend Ryan. Fairly simple construction using 1 inch dimensional lumber and 3/4 inch plywood.
 

@@ -11,7 +11,6 @@ excerpt: "Seccond (successful) attempt at making wheel chocks for Aviat to inclu
 tags: ["Woodworking", "CNC"]
 ---
 
-# Summary
+## Summary
 
 Second, and more successful, attempt to make wheel chocks for Aviat. After the failure of the first method, we decided to carve them all individually on the CNC. A custom jig was made, all the chocks were carved, and they were finished with a heavy dip in yellow enamel paint.
-

@@ -11,10 +11,10 @@ excerpt: ""
 tags: ["3DPrinting"]
 ---
 
-# Summary
+## Summary
 
 This part replaces the small plastic retainer that stops the check valve ball from traveling up the beer outlet tube on a kegerator beer coupler.
 
-Evidently, these parts are way over the top expensive ($8 for a dime size part...) so after losing mine I modeled this replacement.
+These parts are way over the top expensive ($8 for a dime-size part...) so after losing mine I modeled this replacement.
 
 This part has been printed and tested, it works great!

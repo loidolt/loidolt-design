@@ -11,6 +11,6 @@ excerpt: ""
 tags: ["Woodworking", "Restorations"]
 ---
 
-# Summary
+## Summary
 
 Tool stand built to hold the Delta table saw I restored last year. This stand also has some extra storage for commonly used table saw items like a brush, angle gauge, dado stack, push sticks, extra saw blades, and fingerboard.

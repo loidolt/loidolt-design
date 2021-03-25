@@ -11,9 +11,7 @@ excerpt: ""
 tags: ["3DPrinting"]
 ---
 
-# Summary
-
- 
+## Summary
 
 In my struggle to contain the wire and visual mess of my Kossel Mini printers, I designed this base.
 
@@ -25,11 +23,11 @@ Designed to fit almost any Kossel Mini style printer up to 220 mm build platform
 
 The model shows a Smoothieboard, though there is plenty of room for a RAMPS 1.4 or most other printer control boards in that space instead.
 
-You will need a saw, drill and some patience or a CNC/ laser cutter for the top and bottom sheets that complete the base as well as the bed support and insulation circle. 1:1 scale SVG files are included for all of those pieces. You can either print them out and cut around them or load up your CAM software of choice. The removable panels can either be cut or printed, your preference, files are provided for either option.
+You will need a saw, drill, and some patience or a CNC/ laser cutter for the top and bottom sheets that complete the base as well as the bed support and insulation circle. 1:1 scale SVG files are included for all of those pieces. You can either print them out and cut around them or load up your CAM software of choice. The removable panels can either be cut or printed, your preference, files are provided for either option.
 
 Thanks! Please let me know if you have any questions!
 
-# Parts List
+## Parts List
 
 \*32x - M3 x 10 mm screws
 
@@ -39,7 +37,7 @@ Thanks! Please let me know if you have any questions!
 
 \*4x - M3 x 6 mm screws
 
-(\*note that the screw lengths for attaching the top and bottom of the base to the walls assume you are counter sinking the screw heads completely, if not add an additional 3mm)
+(\*note that the screw lengths for attaching the top and bottom of the base to the walls assume you are countersinking the screw heads completely, if not add 3mm)
 
 1x - 60 x 60 x 25 mm fan
 

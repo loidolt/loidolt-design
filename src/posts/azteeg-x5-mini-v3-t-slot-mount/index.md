@@ -11,7 +11,6 @@ excerpt: "Simple t-slot extrusion mount for Azteeg X5 Mini V3"
 tags: ["3DPrinting", "Electronics"]
 ---
 
-# Summary
+## Summary
 
-Simple t-slot extrusion mount for Azteeg X5 Mini V3. Inspired by the excellent Smoothieboard mount by EclecticAngler, [https://www.thingiverse.com/thing:329323](https://www.thingiverse.com/thing:329323). May work for other versions of the Azteeg X5 Mini but I only have version 3 so I can't confirm.
-
+Simple t-slot extrusion mount for Azteeg X5 Mini V3. Inspired by the excellent Smoothieboard mount by EclecticAngler, [https://www.thingiverse.com/thing:329323](https://www.thingiverse.com/thing:329323). It may work for other versions of the Azteeg X5 Mini but I only have version 3 so I can't confirm.

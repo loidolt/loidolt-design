@@ -11,7 +11,7 @@ excerpt: "This is a simple tooling holder for my Shapeoko 3."
 tags: ["Woodworking", "CNC"]
 ---
 
-# Summary
+## Summary
 
 This is a simple tooling holder for my Shapeoko 3. It has various slots to house the tools needed for regular machine maintenance, collets, and of course ample space for 1/4" and 1/8" endmills.
 

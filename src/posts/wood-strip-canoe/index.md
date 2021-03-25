@@ -11,6 +11,6 @@ excerpt: ""
 tags: ["Woodworking"]
 ---
 
-# About
+## About
 
 I built this cedar wood strip canoe with my dad when I was 14 years old. I wish I had more information on it but this was before I started keeping track of my projects.

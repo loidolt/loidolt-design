@@ -11,6 +11,6 @@ excerpt: ""
 tags: ["CNC"]
 ---
 
-# Summary
+## Summary
 
 Simple CNC carved plaque for the Milton Camp. We wanted to give Julia’s parents something to remember the year they bought the place as well as a way to direct people to the website.

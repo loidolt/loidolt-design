@@ -12,8 +12,8 @@ tags: ["3DPrinting"]
 
 ---
 
-# Summary
+## Summary
 
-Peg with two holes that fit's into the top rail slots on a Grizzly Wagon for gardens.
+Peg with two holes that fit into the top rail slots on a Grizzly Wagon for gardens.
 
 Allows the use of ropes, or bungee cords to secure things in the wagon.

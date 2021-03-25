@@ -11,8 +11,8 @@ excerpt: ""
 tags: ["3DPrinting", "Electronics"]
 ---
 
-# Summary
+## Summary
 
-Remix of this awesome case [https://www.thingiverse.com/thing:846874](https://www.thingiverse.com/thing:846874) with added ventilation.
+Remix of this awesome case [https://www.thingiverse.com/thing:846874](https://www.thingiverse.com/thing:846874) with added ventilation.
 
 Thanks for the original upload lyratron!

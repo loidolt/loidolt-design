@@ -11,7 +11,7 @@ excerpt: ""
 tags: ["Metalworking"]
 ---
 
-# Summary
+## Summary
 
 Probably should have taken more pictures while doing this, but there are lots of guides and videos online, so just do a quick search and you will find tons of great guides if you wish to make one of your own. I made mine out of a huge soup can. One of those wholesale ones at Walmart, which I guess puts it more in the realm of a coffee can forge.
 

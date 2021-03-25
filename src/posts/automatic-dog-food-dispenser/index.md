@@ -11,8 +11,8 @@ excerpt: "An automatic dog feeder that will feed a selected portion of food twic
 tags: ["3DPrinting", "Electronics"]
 ---
 
-# About
+## About
 
-This is an automatic dog feeder that will feed a selected portion of food twice a day at the times set. It uses a cereal dispenser, small geared motor, real-time clock, and Atmega 328p to automatically feed your dog.
+This is an automatic dog feeder that will feed a selected portion of food twice a day at the times set. It uses a cereal dispenser, a small geared motor, a real-time clock, and an Atmega 328p to automatically feed your dog.
 
-There is also a button to manually feed the dog and a toggle switch to disable automatic feeding (for when the dog is not around or special dietary needs are temporary needed.)
+There is also a button to manually feed the dog and a toggle switch to disable automatic feeding (for when the dog is not around or special dietary needs are temporarily needed.)

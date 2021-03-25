@@ -11,10 +11,10 @@ excerpt: ""
 tags: ["3DPrinting", "Electronics"]
 ---
 
-# Summary
+## Summary
 
-I made two of these panel meter weather stations, one for my Father and one for my soon to be Father-In-Law for Father's Day 2017. Each weather station uses a Particle Photon to aggregate weather information from an online weather API service called Dark Sky.
+I made two of these panel meter weather stations, one for my Father and one for my soon-to-be Father-In-Law for Father's Day 2017. Each weather station uses a Particle Photon to aggregate weather information from an online weather API service called Dark Sky.
 
-This design was based heavily on the great work done by Grady Hillhouse from the [Practical Engineering Blog](https://grady-hillhouse.squarespace.com/). A link to the specific article referenced to create these weather station displays can be found in by clicking the button below.
+This design was based heavily on the great work done by Grady Hillhouse from the [Practical Engineering Blog](https://grady-hillhouse.squarespace.com/). A link to the specific article referenced to create these weather station displays can be found by clicking the button below.
 
-I'm not going to go into too much detail on how I constructed these since the video and article provided by Grady is already fantastic. Below are links to the svg panel meter faceplates I designed as well as a Fusion 360 file for the wood housing.
+I'm not going to go into too much detail on how I constructed these since the video and article provided by Grady is already fantastic. Below are links to the SVG panel meter faceplates I designed as well as a Fusion 360 file for the wood housing.

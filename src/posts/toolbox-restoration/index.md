@@ -11,7 +11,7 @@ excerpt: ""
 tags: ["Restorations"]
 ---
 
-# Summary
+## Summary
 
 My Dad gave me this old truck bed toolbox that he no longer needed. I cleaned it up with some industrial degreaser, removed the old weatherstripping, and painted it with Rust-Oleum spray truck bed liner. I replaced the locks (missing keys) and recreated the latch using the old one as a guide.
 

@@ -11,6 +11,6 @@ excerpt: ""
 tags: ["Textiles"]
 ---
 
-# Summary
+## Summary
 
-This is a quick and dirty sketch of how I build my mods for UPT student harnesses. If you need information beyond this, contact me and I will talk you through it or provide better instructions by way of nicer drawings or a sketchup design.
+This is a quick and dirty sketch of how I build my mods for UPT student harnesses. If you need information beyond this, contact me and I will talk you through it or provide better instructions by way of nicer drawings or a SketchUp design.

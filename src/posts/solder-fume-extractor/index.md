@@ -11,10 +11,10 @@ excerpt: ""
 tags: ["Woodworking", "Electronics"]
 ---
 
-# Summary
+## Summary
 
 I recently upgraded the inline blower fan in my server fan cooling system and was looking for a use for the old one. I decided to build a fume extractor for soldering using the old blower fan and a duct exhaust filter.
 
-The box was made from maple plywood and finished with spar varnish. There are wheels underneath to allow easy carting around and a flexible hose hooks up to the hole in the top to bring the air inlet close to the soldering work area.
+The box was made from maple plywood and finished with spar varnish. There are wheels underneath to allow easy carting around and a flexible hose hook up to the hole in the top to bring the air inlet close to the soldering work area.
 
 The fume extractor is capable of sucking in smoke from a roughly 6 cubic inch area around the inlet nozzle. The (somewhat ridiculously) oversized activated carbon filter easily pulls any dangerous fumes and smells out of the air.

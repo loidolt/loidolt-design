@@ -12,13 +12,13 @@ tags: ["3DPrinting"]
 
 ---
 
-# Summary
+## Summary
 
 A simple cooler to force air through a Phantom 4 Pro battery. In my testing, this cooler will take a hot post-flight battery to cool enough to charge in about 1 minute if the ambient temperature is around 75-80 degrees Fahrenheit.
 
 It is powered using a 12V car outlet, or via any other 12V power source. It can also be run off 5V but fan speed (and cooling speed as a result) will be significantly slower.
 
-# Hardware Needed:
+## Hardware Needed:
 
 2 - 40mm x 28mm Fan
 
@@ -40,9 +40,9 @@ https://smile.amazon.com/outstanding-5-Pack-Threaded-Connector-Adapter/dp/B07C46
 
 4 - M3 x 40mm Machine Screws
 
-# Post-Printing
+## Post-Printing
 
-## Wiring
+### Wiring
 Simply solder the positive wires from the fans to the switch, and wire the other side of the switch to the positive terminal on your DC power jack.
 
 Then solder the negative wires from your fans directly to the negative terminal on your DC power jack and you are done.

@@ -11,7 +11,7 @@ excerpt: ""
 tags: ["3DPrinting"]
 ---
 
-# About
+## About
 
 I built this tea box for my soon-to-be Mother in Law, Jeanne Milton. I wanted to carve this box from two solid pieces of wood using the CNC and use a linked hinge for visual interest and mechanical complexity.
 

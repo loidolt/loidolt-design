@@ -11,7 +11,7 @@ excerpt: ""
 tags: ["Electronics"]
 ---
 
-# Summary
+## Summary
 
 My father recently put a dust collection system in his garage shop. I built this automatic dust collector controller to control its operation so he doesn't have to worry about turning it on and off when he uses a tool.
 

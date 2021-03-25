@@ -11,8 +11,8 @@ excerpt: ""
 tags: ["Woodworking"]
 ---
 
-# Summary
+## Summary
 
 Another tool bench, similar to the benches I built for my CNC, Laser Cutter, and Miter Saw.
 
-This bench's special feature is a downdraft table in place of the drawer. This downdraft table is connected to the airbox in the back along with two ports for the tools on top. Air flow to each tool is controlled via three laser-cut blast gates.
+This bench's special feature is a downdraft table in place of the drawer. This downdraft table is connected to the airbox in the back along with two ports for the tools on top. Airflow to each tool is controlled via three laser-cut blast gates.

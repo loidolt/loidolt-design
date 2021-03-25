@@ -12,15 +12,16 @@ tags: ["3DPrinting"]
 
 ---
 
-# Summary
+## Summary
 
 Stiffening bracket for Ryobi Garage Door Openers.
 
-We found the included bracket to be way too flexible and easy to knock out of alignment. This corner brace screws into place through the existing holes in the factory bracket and provides some much needed rigidity.
+We found the included bracket to be way too flexible and easy to knock out of alignment. This corner brace screws into place through the existing holes in the factory bracket and provides some much-needed rigidity.
 
-The four small screw holes are threaded for an M5 x 0.8 pitch machine screw. The lag screw and nail (or a wood screw) from the original installation can be use to attach everything to the wall just as it was before.
+The four small screw holes are threaded for an M5 x 0.8 pitch machine screw. The lag screw and nail (or a wood screw) from the original installation can be used to attach everything to the wall just as it was before.
 
-# Print Settings
+## Print Settings
+
 Infill:
 50%
 

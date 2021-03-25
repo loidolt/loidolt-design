@@ -11,7 +11,7 @@ excerpt: "A 3 square meter, model version of the BHL2 single surface paraglider 
 tags: ["Textiles"]
 ---
 
-# Summary
+## Summary
 
 A 3 square meter, model version of the BHL2 single surface paraglider from Laboratori D'Envol.
 

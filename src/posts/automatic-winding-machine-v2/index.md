@@ -12,21 +12,21 @@ tags: ["3DPrinting"]
 
 ---
 
-# Summary
+## Summary
 
-This is an automatic winding machine for coiling up small cords, strings or wire. We needed a way to reliably coil up specific lengths of cord for sale in a kit. This machine is the updated version of my original Automatic Winding Machine, making it more reliable, easier to use, and above all much, much quieter.
+This is an automatic winding machine for coiling up small cords, strings, or wires. We needed a way to reliably coil up specific lengths of cord for sale in a kit. This machine is the updated version of my original Automatic Winding Machine, making it more reliable, easier to use, and above all much, much quieter.
 
 V1 => https://www.thingiverse.com/thing:1852171
 
-The rotary encoder keeps track of the distance coiled with a closed loop system. This allows more fool proof operation, recovery if the spool hangs up or jams, and the ability to adjust the diameter of the coil without having to change the code.
+The rotary encoder keeps track of the distance coiled with a closed-loop system. This allows more foolproof operation, recovery if the spool hangs up or jams, and the ability to adjust the diameter of the coil without having to change the code.
 
-This version features an LCD display with button controls, easy to edit firmware, more robust encoder guide system, integrated spool holder, quiet belt driven platter, enclosed electronics, and a ton of other tiny tweaks and improvements.
+This version features an LCD display with button controls, easy to edit firmware, more robust encoder guide system, an integrated spool holder, a quiet belt-driven platter, enclosed electronics, and a ton of other tiny tweaks and improvements.
 
-Let me know if you have any questions or need build instructions. I'm happy to provide more detail but will need time to do the full instructional write up. I can also provide pre-built custom acrylic panels and aluminum plate on request for a small fee.
+Let me know if you have any questions or need build instructions. I'm happy to provide more detail but will need time to do the full instructional write-up. I can also provide pre-built custom acrylic panels and aluminum plates on request for a small fee.
 
 Happy building!
 
-# Print Settings
+## Print Settings
 Resolution:
 .3
 
@@ -46,15 +46,15 @@ Print the Encoder Wheel and Idler Wheel at high resolution, I used 0.1 mm layer 
 Print the Plate Shaft Mount solid (100% infill) to ensure it is nice and rigid.
 
 
-# Bill of Materials
-## Hardware
+## Bill of Materials
+### Hardware
 2020 Misumi T-Slot:
 
 16x 260mm
 4x 450mm
 Lots of Cast Aluminum Corner Brackets (or print some if you want plastic brackets)
 
-### Tubing and Shafts:
+#### Tubing and Shafts:
 
 1x 8mm x 75mm Round Metal Rod
 
@@ -65,19 +65,19 @@ Bearings:
 18x 623Z Flange Bearing
 2x 608Z
 
-### Fasteners:
+#### Fasteners:
 
 4x M8-1.25 x 16mm Button Head Hex Socket Cap Screws
-A bunch of M4 screws, washers and t-slot nuts
+A bunch of M4 screws, washers, and t-slot nuts
 
-### Other:
+#### Other:
 
 M3 x 50mm Round Aluminum Standoff
 1/4" x 12" Aluminum 5052 Plate Disk
 2x 12"x12" White Acrylic Sheet
 
-## Electronics
-### Mechanical:
+### Electronics
+#### Mechanical:
 
 1x Signswise 600p/r Incremental Rotary Encoder Dc5-24v Wide Voltage Power Supply 6mm Shaft
 
@@ -93,7 +93,7 @@ M3 x 50mm Round Aluminum Standoff
 
 1x Panel Mount USB Cable B to B
 
-### Control:
+#### Control:
 
 1x L298N Motor Drive
 
@@ -107,8 +107,8 @@ M3 x 50mm Round Aluminum Standoff
 
 4x Arcade Buttons
 
-# Changelog
+## Changelog
 Version 2.1
 Increased thickness of the cord guide mount.
 
-Created new bearing based cord guide to reduce friction.
+Created a new bearing-based cord guide to reduce friction.

@@ -11,6 +11,6 @@ excerpt: ""
 tags: ["Woodworking", "Electronics"]
 ---
 
-# Summary
+## Summary
 
 Simple keyboard and screen mounting system that attaches to the front of my vertical server rack. I needed something to allow local access to the machines for occasional maintenance or re-configuration without having a mess on the floor or extra items taking up space in storage.

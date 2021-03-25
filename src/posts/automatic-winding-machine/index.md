@@ -11,19 +11,19 @@ excerpt: "An automatic winding machine for coiling up small cords, strings or wi
 tags: ["3DPrinting", "Electronics"]
 ---
 
-# Summary
+## Summary
 
-This is an automatic winding machine for coiling up small cords, strings or wire. We needed a way to reliably coil up specific lengths of cord for sale in a kit.
+This is an automatic winding machine for coiling up small cords, strings, or wires. We needed a way to reliably coil up specific lengths of cord for sale in a kit.
 
-The rotary encoder keeps track of the distance coiled with a closed loop system. This allows more foolproof operation, recovery if the spool hangs up or jams, and the ability to adjust the diameter of the coil without having to change the code.
+The rotary encoder keeps track of the distance coiled with a closed-loop system. This allows more foolproof operation, recovery if the spool hangs up or jams, and the ability to adjust the diameter of the coil without having to change the code.
 
-There are two versions, one with arcade buttons and the other with a housing for 4 tactile buttons and an LCD display. I ultimately with the button style setup to save time programming and teaching the operator to use it.
+There are two versions, one with arcade buttons and the other with a housing for 4 tactile buttons and an LCD display. I ultimately with the button style set up to save time programming and teaching the operator to use it.
 
 Firmware is included for the button version, buttons and additional lengths can be added more or less indefinitely.
 
-# Bill Of Materials
+## Bill Of Materials
 
-## Hardware
+### Hardware
 
 - 2020 Misumi T-Slot:
 - 8x 156mm 1x 175mm
@@ -32,7 +32,7 @@ Firmware is included for the button version, buttons and additional lengths can 
 - Fasteners:
   - 1x 8mm x 65mm Bolt A bunch of M3 screws, washers and t-slot nuts
 
-## Electronics
+### Electronics
 
 - 1x uxcell DC 12V 120RPM Micro Gear Box Motor Speed Reduction Electric Gearbox Eccentric Output Shaft
   - [https://smile.amazon.com/gp/product/B01KTYPD8U/ref=oh\_aui\_detailpage\_o01\_s00?ie=UTF8&psc=1](https://smile.amazon.com/gp/product/B01KTYPD8U/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
@@ -42,5 +42,3 @@ Firmware is included for the button version, buttons and additional lengths can 
 
 - 1X Signswise 600p/r Incremental Rotary Encoder Dc5-24v Wide Voltage Power Supply 6mm Shaft
   - [https://smile.amazon.com/gp/product/B00UTIFCVA/ref=oh\_aui\_detailpage\_o06\_s00?ie=UTF8&psc=1](https://smile.amazon.com/gp/product/B00UTIFCVA/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1)
-
-

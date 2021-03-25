@@ -12,7 +12,7 @@ tags: ["3DPrinting"]
 
 ---
 
-# Summary
+## Summary
 
 **UPDATED TO INCLUDE VENTILATION SLOTS
 
@@ -24,6 +24,6 @@ https://smile.amazon.com/gp/product/B07D1PNFG3
 
 You can also easily modify the Fusion 360 file to use any magnet size you want (as long as it fits within the volume of the slider). The last sketch and extrusion in the file sets the size and depth of the magnet pocket.
 
-# Post-Printing
+## Post-Printing
 
 Place the magnet on your Yeti cup lid to ensure proper magnetic alignment, and then press the replacement MagSlider over the magnet. Depending on your magnet's tolerances, you may need a dab of super glue to hold it in place.
