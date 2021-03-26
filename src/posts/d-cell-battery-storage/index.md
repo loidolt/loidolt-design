@@ -7,7 +7,7 @@ coverImage: "DCellBatteryStorage (1).jpg"
 repolink: "https://www.thingiverse.com/thing:4806318"
 modellink: "https://a360.co/3w0enbS"
 attributionlink: ""
-excerpt: ""
+excerpt: "Battery storage for CR2032 and CR2450 coin cell batteries that fits in a D Cell battery slot."
 tags: ["3D Printing"]
 ---
 

@@ -7,7 +7,7 @@ coverImage: "MasterBathroomBarnDoor (1).jpg"
 repolink: ""
 modellink: "https://a360.co/2Qu2UAX"
 attributionlink: ""
-excerpt: ""
+excerpt: "Simple construction pine barn door for our master bathroom with a modern look."
 tags: ["Woodworking"]
 ---
 

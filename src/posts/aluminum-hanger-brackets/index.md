@@ -7,7 +7,7 @@ coverImage: "AluminumHangerBrackets (1).jpg"
 repolink: ""
 modellink: "https://a360.co/3fgIaqO"
 attributionlink: ""
-excerpt: ""
+excerpt: "Heavy duty hanger brackets for a solid wood plaque made from aluminum."
 tags: ["CNC"]
 ---
 

@@ -7,7 +7,7 @@ coverImage: "ClampRacks (1).jpg"
 repolink: ""
 modellink: ""
 attributionlink: ""
-excerpt: ""
+excerpt: "CNC-based clamp racks for quick clamps, bar clamps, C clamps, and spring clamps."
 tags: ["CNC"]
 ---
 

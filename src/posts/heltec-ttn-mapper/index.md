@@ -7,7 +7,7 @@ coverImage: "HeltecTTNMapper (1).JPG"
 repolink: "https://www.thingiverse.com/thing:4805989"
 modellink: ""
 attributionlink: "https://www.thingiverse.com/thing:4729713"
-excerpt: ""
+excerpt: "3D printed case for a Heltec LoRa Dev board used as a TTN Mapper for The Things Network"
 tags: ["3D Printing", "Electronics"]
 ---
 
