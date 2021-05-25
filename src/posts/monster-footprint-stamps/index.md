@@ -8,7 +8,7 @@ repolink: ""
 modellink: ""
 attributionlink: ""
 excerpt: "Where the Wild Things Are style monster footprint concrete stamps."
-tags: ["CNC", "3D Printing"]
+tags: ["CNC", "3DPrinting"]
 ---
 
 ## Summary

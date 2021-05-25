@@ -1,20 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import SEO from "../components/seo";
 import Layout from "../components/layout";
-import Post from "../components/post";
+import Grid from "@material-ui/core/Grid";
+
+import PostCard from "../components/postCard";
+import Seo from "../components/seo";
 import Navigation from "../components/navigation";
 
-const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
+const IndexPage = ({
+  data,
+  pageContext: { nextPagePath, previousPagePath },
+}) => {
   const {
     allMarkdownRemark: { edges: posts },
   } = data;
 
   return (
-    <>
-      <SEO />
-      <Layout>
+    <Layout>
+      <Seo title="Loidolt Design Projects" />
+      <h1>Projects</h1>
+      <Grid container spacing={3} justify="center">
         {posts.map(({ node }) => {
           const {
             id,
@@ -23,30 +29,30 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
           } = node;
 
           return (
-            <Post
-              key={id}
-              title={title}
-              date={date}
-              path={path}
-              coverImage={coverImage}
-              tags={tags}
-              excerpt={excerpt || autoExcerpt}
-            />
+            <Grid item xs={12} sm={6} key={id}>
+              <PostCard
+                title={title}
+                date={date}
+                path={path}
+                coverImage={coverImage}
+                tags={tags}
+                excerpt={excerpt || autoExcerpt}
+              />
+            </Grid>
           );
         })}
-
-        <Navigation
-          previousPath={previousPagePath}
-          previousLabel="Newer"
-          nextPath={nextPagePath}
-          nextLabel="Older"
-        />
-      </Layout>
-    </>
+      </Grid>
+      <Navigation
+        previousPath={previousPagePath}
+        previousLabel="Newer"
+        nextPath={nextPagePath}
+        nextLabel="Older"
+      />
+    </Layout>
   );
 };
 
-Index.propTypes = {
+IndexPage.propTypes = {
   data: PropTypes.object.isRequired,
   pageContext: PropTypes.shape({
     nextPagePath: PropTypes.string,
@@ -55,7 +61,7 @@ Index.propTypes = {
 };
 
 export const postsQuery = graphql`
-  query($limit: Int!, $skip: Int!) {
+  query ($limit: Int!, $skip: Int!) {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//posts//" } }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -74,9 +80,7 @@ export const postsQuery = graphql`
             tags
             coverImage {
               childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
@@ -86,4 +90,4 @@ export const postsQuery = graphql`
   }
 `;
 
-export default Index;
+export default IndexPage;

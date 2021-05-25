@@ -1,92 +1,134 @@
-import React, { useState } from "react";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import styled from "styled-components";
-import Img from "gatsby-image";
+import React from "react";
+import { withStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import Modal from "@material-ui/core/Modal";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-const ImageWrapper = styled.div`
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.1s ease-in-out;
-  border-radius: 2px;
-  overflow: hidden;
-  cursor: zoom-in;
-  div {
-    transition: transform 1s;
-  }
-  :hover {
-    box-shadow: -2px 5px 8px 2px rgba(0, 0, 0, 0.3);
-  }
-`;
+function getModalStyle() {
+  const top = 50;
+  const left = 50;
 
-const GatsbyImage = ({ index, onClick, photo, margin }) => (
-  <ImageWrapper
-    key={index}
-    style={{ margin, height: photo.height, width: photo.width }}
-    onClick={e => onClick(e, { index, photo })}
-  >
-    <Img
-      fixed={typeof window === "undefined" ? { src: {} } : undefined}
-      fluid={photo.fluid}
-      alt={photo.fluid.originalName}
-    />
-  </ImageWrapper>
-);
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`,
+  };
+}
 
-const fileNumber = file =>
-  Number(file.node.childImageSharp.fluid.originalName.replace(/[a-z]/gi, ""));
-
-const getImages = imageArray => {
-  return [...imageArray]
-    .sort((a, b) => fileNumber(b) - fileNumber(a))
-    .map(({ node: { childImageSharp: { fluid, original } } }) => ({
-      height: original.height,
-      width: original.width,
-      src: fluid.originalImg,
-      srcSet: fluid.srcSet,
-      fluid,
-    }));
+const styles = {
+  root: {
+    marginTop: 60,
+    flexGrow: 1,
+  },
+  paper: {
+    padding: 0,
+    textAlign: "center",
+  },
+  thumbnail: {
+    borderRadius: 4,
+    marginBottom: -6,
+  },
+  modal: {
+    position: "absolute",
+    maxWidth: 800,
+    maxHeight: 800,
+    alignItems: "center",
+    justifyContent: "center",
+    outline: "none",
+    borderRadius: 4,
+  },
+  lightboxImage: {
+    borderRadius: 4,
+  },
 };
 
-const styleFn = styleObj => ({ ...styleObj, zIndex: 1040 });
+class Gallery extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+    };
+  }
 
-const PostGallery = ({ photos, ...rest }) => {
-  const [isOpen, setOpen] = useState(false);
-  const [current, setCurrent] = useState(0);
-  const images = getImages(photos);
+  fileNumber = (file) =>
+    Number(file.node.childImageSharp.fluid.originalName.replace(/[a-z]/gi, ""));
 
-  const imageClick = (e, obj) => {
-    setCurrent(obj.index);
-    setOpen(true);
+  sortImages = (imageArray) => {
+    return [...imageArray].sort(
+      (a, b) => this.fileNumber(b) - this.fileNumber(a)
+    );
   };
 
-  return (
-    <div style={{ margin: "4rem auto" }}>
-      {photos.length > 1 && (
-        <Gallery
-          photos={images}
-          onClick={imageClick}
-          renderImage={GatsbyImage}
-          targetRowHeight={250}
-          margin={5}
-          {...rest}
-        />
-      )}
+  handleOpen = (image, name, index) => {
+    this.setState({
+      open: true,
+      modalImage: image,
+      modalName: name,
+      modalIndex: index,
+    });
+  };
 
-      <ModalGateway>
-        {isOpen ? (
+  handleClose = () => {
+    this.setState({
+      open: false,
+      image: "",
+      modalName: "",
+      modalIndex: "",
+    });
+  };
+
+  render() {
+    const { classes } = this.props;
+
+    const images = this.sortImages(this.props.photos);
+
+    if (this.props.photos.length > 1) {
+      return (
+        <div className={classes.root}>
+          <Grid container spacing={3}>
+            {images.map((image, index) => (
+              <Grid item xs={6} sm={4} md={3} key={index}>
+                <Paper
+                  className={classes.paper}
+                  onClick={() =>
+                    this.handleOpen(
+                      image.node.childImageSharp.gatsbyImageData,
+                      this.props.postName,
+                      index
+                    )
+                  }
+                >
+                  <GatsbyImage
+                    className={classes.thumbnail}
+                    image={image.node.childImageSharp.gatsbyImageData}
+                    alt={this.props.postName + " " + index}
+                  />
+                </Paper>
+              </Grid>
+            ))}
+          </Grid>
           <Modal
-            onClose={() => {
-              setCurrent(0);
-              setOpen(false);
-            }}
-            styles={{ blanket: styleFn, positioner: styleFn }}
+            open={this.state.open}
+            onClose={this.handleClose}
+            aria-labelledby="image-lightbox"
+            aria-describedby="image-lightbox"
           >
-            <Carousel views={images} currentIndex={current} />
+            <div style={getModalStyle()} className={classes.modal}>
+              <GatsbyImage
+                className={classes.lightboxImage}
+                image={this.state.modalImage}
+                alt={this.state.modalName + " " + this.state.modalIndex}
+                onClick={this.handleClose}
+              />
+            </div>
           </Modal>
-        ) : null}
-      </ModalGateway>
-    </div>
-  );
-};
+        </div>
+      );
+    } else {
+      return null;
+    }
+  }
+}
 
-export default PostGallery;
+export default withStyles(styles)(Gallery);

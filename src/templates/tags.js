@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import SEO from "../components/seo";
 import Layout from "../components/layout";
-import Post from "../components/post";
+import Grid from "@material-ui/core/Grid";
+
+import PostCard from "../components/postCard";
+import Seo from "../components/seo";
 import Navigation from "../components/navigation";
 
-import "../styles/layout.css";
-
-const Tags = ({
+const TagsPage = ({
   data,
   pageContext: { nextPagePath, previousPagePath, tag },
 }) => {
@@ -17,13 +17,10 @@ const Tags = ({
   } = data;
 
   return (
-    <>
-      <SEO />
-      <Layout>
-        <div className="infoBanner">
-          Posts with tag: <span>#{tag}</span>
-        </div>
-
+    <Layout>
+      <Seo title={tag + "Posts Loidolt Design"} />
+      <h1>#{tag}</h1>
+      <Grid container spacing={3} justify="center">
         {posts.map(({ node }) => {
           const {
             id,
@@ -32,29 +29,29 @@ const Tags = ({
           } = node;
 
           return (
-            <Post
-              key={id}
-              title={title}
-              path={path}
-              tags={tags}
-              coverImage={coverImage}
-              excerpt={excerpt || autoExcerpt}
-            />
+            <Grid item xs={12} sm={6} key={id}>
+              <PostCard
+                title={title}
+                path={path}
+                tags={tags}
+                coverImage={coverImage}
+                excerpt={excerpt || autoExcerpt}
+              />
+            </Grid>
           );
         })}
-
-        <Navigation
-          previousPath={previousPagePath}
-          previousLabel="Newer"
-          nextPath={nextPagePath}
-          nextLabel="Older"
-        />
-      </Layout>
-    </>
+      </Grid>
+      <Navigation
+        previousPath={previousPagePath}
+        previousLabel="Newer"
+        nextPath={nextPagePath}
+        nextLabel="Older"
+      />
+    </Layout>
   );
 };
 
-Tags.propTypes = {
+TagsPage.propTypes = {
   data: PropTypes.object.isRequired,
   pageContext: PropTypes.shape({
     nextPagePath: PropTypes.string,
@@ -63,7 +60,7 @@ Tags.propTypes = {
 };
 
 export const postsQuery = graphql`
-  query($limit: Int!, $skip: Int!, $tag: String!) {
+  query ($limit: Int!, $skip: Int!, $tag: String!) {
     allMarkdownRemark(
       filter: { frontmatter: { tags: { in: [$tag] } } }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -76,14 +73,13 @@ export const postsQuery = graphql`
           excerpt
           frontmatter {
             title
+            date(formatString: "DD MMMM YYYY")
             path
             excerpt
             tags
             coverImage {
               childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
@@ -93,4 +89,4 @@ export const postsQuery = graphql`
   }
 `;
 
-export default Tags;
+export default TagsPage;

@@ -1,66 +1,59 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
+/**
+ * Layout component that queries for data
+ * with Gatsby's StaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/static-query/
+ */
 
-import Header from "./header";
-import Footer from "./footer";
-import ContactForm from "../helpers/contactform";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
 
-import "../styles/layout.css";
+import Header from './header'
+import './layout.css'
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          logo {
-            src
-            alt
-          }
-          logoText
-          defaultTheme
-          copyrights
-          mainMenu {
-            title
-            path
-          }
-          showMenuItems
-          menuMoreText
-        }
-      }
-    }
-  `);
-  const {
-    title,
-    logo,
-    logoText,
-    defaultTheme,
-    mainMenu,
-    showMenuItems,
-    menuMoreText,
-    copyrights,
-  } = data.site.siteMetadata;
-
   return (
-    <div className="container">
-      <Header
-        siteTitle={title}
-        siteLogo={logo}
-        logoText={logoText}
-        defaultTheme={defaultTheme}
-        mainMenu={mainMenu}
-        mainMenuItems={showMenuItems}
-        menuMoreText={menuMoreText}
-      />
-      <div className="content">{children}</div>
-      <Footer copyrights={copyrights} />
-    </div>
-  );
-};
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
+          }
+        }
+      `}
+      render={data => (
+        <div style={{ minHeight: '100vh', backgroundColor: '#212121' }}>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div
+            style={{
+              margin: `0 auto`,
+              maxWidth: 960,
+              padding: `0px 1.0875rem 1.45rem`,
+              paddingTop: 100,
+            }}
+          >
+            <main>{children}</main>
+            <footer
+              style={{
+                paddingTop: 10,
+                paddingBottom: 20,
+                color: '#a9a9b3',
+              }}
+            >
+              Loidolt Design © {new Date().getFullYear()}
+            </footer>
+          </div>
+        </div>
+      )}
+    />
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout

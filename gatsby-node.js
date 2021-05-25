@@ -1,12 +1,12 @@
 const { paginate } = require("gatsby-awesome-pagination");
-const { forEach, uniq, filter, not, isNil, flatMap } = require("rambdax");
+const { forEach, uniq, filter, not, isNil, chain } = require("rambdax");
 const path = require("path");
 const { toKebabCase } = require("./src/helpers");
 
 const pageTypeRegex = /src\/(.*?)\//;
-const getType = node => node.fileAbsolutePath.match(pageTypeRegex)[1];
+const getType = (node) => node.fileAbsolutePath.match(pageTypeRegex)[1];
 
-const pageTemplate = path.resolve(`./src/templates/page.js`);
+const postTemplate = path.resolve(`./src/templates/post.js`);
 const indexTemplate = path.resolve(`./src/templates/index.js`);
 const tagsTemplate = path.resolve(`./src/templates/tags.js`);
 
@@ -38,7 +38,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
@@ -58,7 +58,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
     const posts = allNodes.filter(
       ({ internal, fileAbsolutePath }) =>
         internal.type === "MarkdownRemark" &&
-        fileAbsolutePath.indexOf("/posts/") !== -1,
+        fileAbsolutePath.indexOf("/posts/") !== -1
     );
 
     // Create posts index with pagination
@@ -71,7 +71,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
     });
 
     // Create each markdown page and post
-    forEach(({ node }, index) => {
+    markdownPages.forEach(({ node }, index) => {
       const previous = index === 0 ? null : sortedPages[index - 1].node;
       const next =
         index === sortedPages.length - 1 ? null : sortedPages[index + 1].node;
@@ -82,7 +82,7 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
       createPage({
         path: node.frontmatter.path,
         directory: node.frontmatter.directory,
-        component: pageTemplate,
+        component: postTemplate,
         context: {
           type: getType(node),
           directory: node.frontmatter.directory,
@@ -94,14 +94,14 @@ exports.createPages = ({ actions, graphql, getNodes }) => {
 
     // Create tag pages
     const tags = filter(
-      tag => not(isNil(tag)),
-      uniq(flatMap(post => post.frontmatter.tags, posts)),
+      (tag) => not(isNil(tag)),
+      uniq(chain((post) => post.frontmatter.tags, posts))
     );
 
-    forEach(tag => {
+    forEach((tag) => {
       const postsWithTag = posts.filter(
-        post =>
-          post.frontmatter.tags && post.frontmatter.tags.indexOf(tag) !== -1,
+        (post) =>
+          post.frontmatter.tags && post.frontmatter.tags.indexOf(tag) !== -1
       );
 
       paginate({

@@ -8,7 +8,7 @@ repolink: ""
 modellink: ""
 attributionlink: ""
 excerpt: ""
-tags: ["Woodworking, House"]
+tags: ["Woodworking", "House"]
 ---
 
 ## Summary

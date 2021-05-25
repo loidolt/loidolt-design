@@ -1,9 +1,3 @@
-const postCssPresetEnv = require(`postcss-preset-env`);
-const postCSSNested = require("postcss-nested");
-const postCSSUrl = require("postcss-url");
-const postCSSImports = require("postcss-import");
-const cssnano = require("cssnano");
-const postCSSMixins = require("postcss-mixins");
 const queries = require("./src/helpers/algolia-queries");
 
 require("dotenv").config({
@@ -16,39 +10,18 @@ module.exports = {
     description: `I like learning and creating. I strongly believe the world needs more of that.`,
     copyrights: "Loidolt Design 2021",
     author: `Chris Loidolt`,
-    logo: {
-      src: "",
-      alt: "Loidolt Design",
-    },
-    logoText: "Loidolt Design",
-    defaultTheme: "dark",
     siteUrl: `https://loidolt.design`,
-    postsPerPage: 5,
-    showMenuItems: 2,
-    menuMoreText: "More",
-    mainMenu: [
-      {
-        title: "Projects",
-        path: "/",
-      },
-      {
-        title: "About",
-        path: "/about",
-      },
-      {
-        title: "Websites",
-        path: "/websites",
-      },
-      {
-        title: "Contact",
-        path: "/contact",
-      },
-    ],
+    postsPerPage: 12,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
-    `babel-preset-gatsby`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/sitemap.xml",
+      },
+    },
     "gatsby-plugin-robots-txt",
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -94,25 +67,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          postCSSUrl(),
-          postCSSImports(),
-          postCSSMixins(),
-          postCSSNested(),
-          postCssPresetEnv({
-            importFrom: "src/styles/variables.css",
-            stage: 1,
-            preserve: false,
-          }),
-          cssnano({
-            preset: "default",
-          }),
-        ],
-      },
-    },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -158,14 +113,39 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Loidolt Design`,
+        name: `loidolt-design`,
         short_name: `loidolt-design`,
         start_url: `/`,
-        background_color: `#292a2d`,
-        theme_color: `#292a2d`,
+        background_color: `#212121`,
+        theme_color: `#212121`,
         display: `minimal-ui`,
-        icon: `src/images/CLLightBulbBlue.png`,
+        icon: `src/images/CLLightBulbBlue.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      // If you want to use styled components, in conjunction to Material-UI, you should:
+      // - Change the injection order
+      // - Add the plugin
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+        webFontsConfig: {
+          fonts: {
+            google: [
+              {
+                family: `Inter`,
+                variants: [`300`, `400`, `500`, "700"],
+              },
+            ],
+          },
+        },
+      },
+    },
+    "gatsby-plugin-styled-components",
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    `gatsby-plugin-offline`,
   ],
 };
