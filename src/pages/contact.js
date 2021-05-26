@@ -1,13 +1,13 @@
-import React from 'react'
-import { withStyles } from '@material-ui/core'
-import TextField from '@material-ui/core/TextField'
-import Paper from '@material-ui/core/Paper'
-import Button from '@material-ui/core/Button'
-import Grid from '@material-ui/core/Grid'
-import FormControl from '@material-ui/core/FormControl'
+import React from "react";
+import { withStyles } from "@material-ui/core";
+import TextField from "@material-ui/core/TextField";
+import Paper from "@material-ui/core/Paper";
+import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
+import FormControl from "@material-ui/core/FormControl";
 
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 const styles = () => ({
   paper: {
@@ -15,62 +15,59 @@ const styles = () => ({
     paddingRight: 20,
     paddingLeft: 20,
     paddingBottom: 10,
-    backgroundColor: '#424242',
+    backgroundColor: "#424242",
     borderRadius: 4,
   },
   successMessage: {
     padding: 20,
   },
   input: {
-    color: '#c9c9c9',
-    borderColor: '#c9c9c9',
+    color: "#c9c9c9",
+    borderColor: "#c9c9c9",
   },
   inputLabel: {
-    color: '#c9c9c9',
-    borderColor: '#c9c9c9',
+    color: "#c9c9c9",
+    borderColor: "#c9c9c9",
   },
-  hp: {
-    display: 'none',
-  },
-})
+});
 
 class Contact extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      status: '',
-    }
+      status: "",
+    };
   }
 
-  submitForm = ev => {
-    ev.preventDefault()
-    const form = ev.target
-    const data = new FormData(form)
-    const xhr = new XMLHttpRequest()
-    xhr.open(form.method, form.action)
-    xhr.setRequestHeader('Accept', 'application/json')
+  submitForm = (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
-        form.reset()
-        this.setState({ status: 'SUCCESS' })
+        form.reset();
+        this.setState({ status: "SUCCESS" });
       } else {
-        this.setState({ status: 'ERROR' })
+        this.setState({ status: "ERROR" });
       }
-    }
-    xhr.send(data)
-  }
+    };
+    xhr.send(data);
+  };
 
   render() {
-    const { status } = this.state
-    const { classes } = this.props
+    const { status } = this.state;
+    const { classes } = this.props;
 
     return (
       <Layout>
         <Seo title="Contact Loidolt Design" />
         <h1>Contact</h1>
         <Paper className={classes.paper}>
-          {status === 'SUCCESS' ? (
+          {status === "SUCCESS" ? (
             <div className={classes.successMessage}>
               <p>Thanks! I'll get back to you as soon as possible.</p>
             </div>
@@ -158,19 +155,23 @@ class Contact extends React.Component {
                   </FormControl>
                 </Grid>
                 <Grid item xs={12}>
-                  <input type="text" name="_gotcha" className={classes.hp} />
+                  <input
+                    type="text"
+                    name="_gotcha"
+                    style={{ display: "none" }}
+                  />
                   <Button variant="contained" color="primary" type="submit">
                     SUBMIT
                   </Button>
-                  {status === 'ERROR' && <p>Ooops! There was an error.</p>}
+                  {status === "ERROR" && <p>Ooops! There was an error.</p>}
                 </Grid>
               </Grid>
             </form>
           )}
         </Paper>
       </Layout>
-    )
+    );
   }
 }
 
-export default withStyles(styles)(Contact)
+export default withStyles(styles)(Contact);

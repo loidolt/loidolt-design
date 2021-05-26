@@ -16,7 +16,7 @@ function getModalStyle() {
   };
 }
 
-const styles = {
+const styles = (theme) => ({
   root: {
     marginTop: 60,
     flexGrow: 1,
@@ -31,8 +31,12 @@ const styles = {
   },
   modal: {
     position: "absolute",
-    maxWidth: 800,
-    maxHeight: 800,
+    maxWidth: 960,
+    maxHeight: 960,
+    [theme.breakpoints.down("sm")]: {
+      width: "95%",
+      height: "auto",
+    },
     alignItems: "center",
     justifyContent: "center",
     outline: "none",
@@ -41,7 +45,7 @@ const styles = {
   lightboxImage: {
     borderRadius: 4,
   },
-};
+});
 
 class Gallery extends React.Component {
   constructor(props) {
