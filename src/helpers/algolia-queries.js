@@ -10,17 +10,7 @@ const pageQuery = ` {
               title
               coverImage {
                 publicURL
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    aspectRatio
-                    base64
-                    src
-                    srcSet
-                    srcSetWebp
-                    sizes
-                    originalImg
-                  }
-                }
+                name
               }
             }
             html
@@ -30,7 +20,7 @@ const pageQuery = ` {
       }
   }
 `;
-const flatten = arr =>
+const flatten = (arr) =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
     ...rest,
