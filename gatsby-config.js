@@ -13,7 +13,6 @@ module.exports = {
     siteUrl: `https://loidolt.design`,
     postsPerPage: 12,
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
