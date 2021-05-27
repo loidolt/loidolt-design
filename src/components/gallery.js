@@ -33,7 +33,7 @@ const styles = (theme) => ({
     position: "absolute",
     maxWidth: 960,
     maxHeight: 960,
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       width: "95%",
       height: "auto",
     },
@@ -59,9 +59,11 @@ class Gallery extends React.Component {
     Number(file.node.childImageSharp.fluid.originalName.replace(/[a-z]/gi, ""));
 
   sortImages = (imageArray) => {
-    return [...imageArray].sort(
-      (a, b) => this.fileNumber(b) - this.fileNumber(a)
-    );
+    return [...imageArray].sort(function (a, b) {
+      if (a > b) return 1;
+      if (a < b) return -1;
+      return 0;
+    });
   };
 
   handleOpen = (image, name, index) => {

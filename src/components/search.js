@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import { makeStyles } from '@material-ui/core/styles'
-import algoliasearch from 'algoliasearch/lite'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import { makeStyles } from "@material-ui/core/styles";
+import algoliasearch from "algoliasearch/lite";
 import {
   InstantSearch,
   Hits,
@@ -10,74 +10,80 @@ import {
   Highlight,
   connectStateResults,
   connectSearchBox,
-} from 'react-instantsearch-dom'
-import Paper from '@material-ui/core/Paper'
-import IconButton from '@material-ui/core/IconButton'
-import Typography from '@material-ui/core/Typography'
-import Popover from '@material-ui/core/Popover'
-import SearchIcon from '@material-ui/icons/Search'
-import TextField from '@material-ui/core/TextField'
+} from "react-instantsearch-dom";
+import Paper from "@material-ui/core/Paper";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import Popover from "@material-ui/core/Popover";
+import SearchIcon from "@material-ui/icons/Search";
+import TextField from "@material-ui/core/TextField";
 
 const searchClient = algoliasearch(
-  'RLTU8HW1H7',
-  '7038bb8ae4a108d1e4789b53dfe38524'
-)
+  "RLTU8HW1H7",
+  "7038bb8ae4a108d1e4789b53dfe38524"
+);
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   search: {
-    position: 'relative',
+    position: "relative",
   },
   searchIcon: {
-    color: '#ffffff',
+    color: "#ffffff",
   },
   searchBox: {
-    width: '100%',
+    width: "100%",
     maxWidth: 800,
     padding: 20,
-    backgroundColor: '#333333',
-    borderColor: '#333333',
+    backgroundColor: "#333333",
+    borderColor: "#333333",
   },
   searchInput: {
-    color: '#ffffff',
-    borderColor: '#ffffff',
+    color: "#ffffff",
+    borderColor: "#ffffff",
   },
   searchInputLabel: {
-    color: '#ffffff',
-    borderColor: '#ffffff',
+    color: "#ffffff",
+    borderColor: "#ffffff",
   },
   popover: {
-    backgroundColor: '#333333',
+    backgroundColor: "#333333",
   },
   resultPaper: {
     padding: 10,
-    backgroundColor: '#515151',
+    backgroundColor: "#515151",
     maxWidth: 800,
   },
-}))
+}));
 
 export default function Search() {
-  const classes = useStyles()
-  const [anchorEl, setAnchorEl] = React.useState(null)
+  const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget)
-  }
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
   const handleClose = () => {
-    setAnchorEl(null)
-  }
+    setAnchorEl(null);
+  };
 
   const Results = connectStateResults(
     ({ searchState, searchResults, children }) =>
-      searchState && searchState.query
-        ? searchResults && searchResults.nbHits !== 0
-          ? children
-          : 'No joy, please try again'
-        : ''
-  )
+      searchState && searchState.query ? (
+        searchResults && searchResults.nbHits !== 0 ? (
+          children
+        ) : (
+          <p style={{ color: "#ffffff", paddingLeft: 20, paddingRight: 20 }}>
+            No joy, please try again
+          </p>
+        )
+      ) : (
+        ""
+      )
+  );
 
-  const open = Boolean(anchorEl)
-  const id = open ? 'search-results' : undefined
+  const open = Boolean(anchorEl);
+  const id = open ? "search-results" : undefined;
 
   return (
     <InstantSearch searchClient={searchClient} indexName="posts">
@@ -97,18 +103,18 @@ export default function Search() {
         anchorEl={anchorEl}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
+          vertical: "bottom",
+          horizontal: "left",
         }}
         transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
+          vertical: "top",
+          horizontal: "right",
         }}
         PaperProps={{ className: classes.popover }}
       >
         <CustomSearchBox
           translations={{
-            placeholder: 'Search Projects',
+            placeholder: "Search Projects",
           }}
         />
         <Results>
@@ -116,11 +122,11 @@ export default function Search() {
         </Results>
       </Popover>
     </InstantSearch>
-  )
+  );
 }
 
 const OverrideSearchBox = ({ currentRefinement, refine }) => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <div className={classes.searchBox}>
@@ -128,8 +134,8 @@ const OverrideSearchBox = ({ currentRefinement, refine }) => {
         noValidate
         action=""
         role="search"
-        onSubmit={e => {
-          e.preventDefault()
+        onSubmit={(e) => {
+          e.preventDefault();
         }}
       >
         <TextField
@@ -139,7 +145,7 @@ const OverrideSearchBox = ({ currentRefinement, refine }) => {
           label="Search Projects"
           variant="outlined"
           value={currentRefinement}
-          onChange={event => refine(event.currentTarget.value)}
+          onChange={(event) => refine(event.currentTarget.value)}
           InputProps={{
             classes: {
               root: classes.searchInput,
@@ -157,13 +163,13 @@ const OverrideSearchBox = ({ currentRefinement, refine }) => {
         />
       </form>
     </div>
-  )
-}
+  );
+};
 
-const CustomSearchBox = connectSearchBox(OverrideSearchBox)
+const CustomSearchBox = connectSearchBox(OverrideSearchBox);
 
 function Hit(props) {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <Paper key={props.hit.id} className={classes.resultPaper}>
@@ -179,9 +185,9 @@ function Hit(props) {
         </Typography>
       </Link>
     </Paper>
-  )
+  );
 }
 
 Hit.propTypes = {
   hit: PropTypes.object.isRequired,
-}
+};
