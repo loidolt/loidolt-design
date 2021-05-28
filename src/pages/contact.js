@@ -154,12 +154,8 @@ class Contact extends React.Component {
                     />
                   </FormControl>
                 </Grid>
+                <input type="text" name="_gotcha" style={{ display: "none" }} />
                 <Grid item xs={12}>
-                  <input
-                    type="text"
-                    name="_gotcha"
-                    style={{ display: "none" }}
-                  />
                   <Button variant="contained" color="primary" type="submit">
                     SUBMIT
                   </Button>
