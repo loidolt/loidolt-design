@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { withStyles } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import Paper from "@material-ui/core/Paper";
@@ -18,8 +19,13 @@ const styles = () => ({
     backgroundColor: "#424242",
     borderRadius: 4,
   },
+  errorMessage: {
+    marginTop: 20,
+    color: "#c9c9c9",
+  },
   successMessage: {
     padding: 20,
+    color: "#c9c9c9",
   },
   input: {
     color: "#c9c9c9",
@@ -35,48 +41,70 @@ class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      status: "",
+      success: "",
+      name: "",
+      email: "",
+      message: "",
+      _gotcha: "",
+      submitting: false,
     };
   }
 
-  submitForm = (ev) => {
-    ev.preventDefault();
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        this.setState({ status: "SUCCESS" });
-      } else {
-        this.setState({ status: "ERROR" });
-      }
-    };
-    xhr.send(data);
+  handleOnChange = (event) => {
+    event.persist();
+    this.setState((prev) => ({
+      ...prev,
+      [event.target.id]: event.target.value,
+    }));
+  };
+
+  handleOnSubmit = (event) => {
+    event.preventDefault();
+    this.setState({ submitting: true });
+    axios({
+      method: "POST",
+      url: "https://formspree.io/f/mzbkaobg",
+      data: {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+        _gotcha: this.state._gotcha,
+      },
+    })
+      .then((r) => {
+        this.setState({
+          submitting: false,
+          status: "SUCCESS",
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((r) => {
+        this.setState({ submitting: false, status: "ERROR" });
+        console.log(r.body);
+      });
   };
 
   render() {
-    const { status } = this.state;
     const { classes } = this.props;
 
     return (
       <Layout>
         <Seo title="Contact Loidolt Design" />
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
         <h1>Contact</h1>
         <Paper className={classes.paper}>
-          {status === "SUCCESS" ? (
+          {this.state.status === "SUCCESS" ? (
             <div className={classes.successMessage}>
               <p>Thanks! I'll get back to you as soon as possible.</p>
             </div>
           ) : (
-            <form
-              onSubmit={this.submitForm}
-              action="https://formspree.io/f/mzbkaobg"
-              method="POST"
-            >
+            <>
               <Grid container spacing={2}>
                 <Grid item xs={6}>
                   <FormControl fullWidth variant="filled">
@@ -86,6 +114,7 @@ class Contact extends React.Component {
                       type="text"
                       name="name"
                       variant="outlined"
+                      onChange={this.handleOnChange}
                       InputProps={{
                         classes: {
                           root: classes.input,
@@ -111,6 +140,7 @@ class Contact extends React.Component {
                       type="email"
                       name="email"
                       variant="outlined"
+                      onChange={this.handleOnChange}
                       InputProps={{
                         classes: {
                           root: classes.input,
@@ -137,6 +167,7 @@ class Contact extends React.Component {
                       multiline
                       rows={5}
                       variant="outlined"
+                      onChange={this.handleOnChange}
                       InputProps={{
                         classes: {
                           root: classes.input,
@@ -154,15 +185,35 @@ class Contact extends React.Component {
                     />
                   </FormControl>
                 </Grid>
-                <input type="text" name="_gotcha" style={{ display: "none" }} />
+                <input
+                  type="text"
+                  id="_gotcha"
+                  name="_gotcha"
+                  onChange={this.handleOnChange}
+                  style={{ display: "none" }}
+                />
+                <div
+                  className="g-recaptcha"
+                  data-sitekey="6Lcj_vgaAAAAAATJtEeC65LGzZzebquBs99UDEh0"
+                ></div>
                 <Grid item xs={12}>
-                  <Button variant="contained" color="primary" type="submit">
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    type="submit"
+                    onClick={this.handleOnSubmit}
+                    disabled={this.state.submitting}
+                  >
                     SUBMIT
                   </Button>
-                  {status === "ERROR" && <p>Ooops! There was an error.</p>}
+                  {this.state.status === "ERROR" && (
+                    <div className={classes.errorMessage}>
+                      <p>Ooops! There was an error. Please try again.</p>
+                    </div>
+                  )}
                 </Grid>
               </Grid>
-            </form>
+            </>
           )}
         </Paper>
       </Layout>
