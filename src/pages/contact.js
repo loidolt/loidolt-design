@@ -92,11 +92,6 @@ class Contact extends React.Component {
     return (
       <Layout>
         <Seo title="Contact Loidolt Design" />
-        <script
-          src="https://www.google.com/recaptcha/api.js"
-          async
-          defer
-        ></script>
         <h1>Contact</h1>
         <Paper className={classes.paper}>
           {this.state.status === "SUCCESS" ? (
@@ -192,10 +187,6 @@ class Contact extends React.Component {
                   onChange={this.handleOnChange}
                   style={{ display: "none" }}
                 />
-                <div
-                  className="g-recaptcha"
-                  data-sitekey="6Lcj_vgaAAAAAATJtEeC65LGzZzebquBs99UDEh0"
-                ></div>
                 <Grid item xs={12}>
                   <Button
                     variant="contained"
